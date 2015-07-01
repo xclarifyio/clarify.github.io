@@ -1,0 +1,78 @@
+---
+layout: default
+title: Clarify - Multi-language Support Quickstart
+---
+
+<div id="primary" class="content-area">
+    <div class="content article">
+        <article id="post-592" class="post-592 page type-page status-publish hentry">
+            <div class="entry-content">
+                <h3>Getting Started with Multi-Language Media Search</h3>
+                <p>This quickstart demonstrates a simple way to get started using the Clarify API. Following these steps, it should take you no more than 5-10 minutes to support search in a variety of languages.</p>
+                <p>We currently support English (default), Spanish (es), and French (fr). More languages are on the way.</p>
+                <pre crayon="false"><strong>Note:</strong> Please contact us at <a href="mailto:support@clarify.io">support@clarify.io</a> to add languages beyond English.</pre>
+                <h3>Configuring Your Environment</h3>
+                <p>While you can use any programming language you choose, we provide a few <a href="https://github.com/Clarify" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify', 'helper libraries']);" >helper libraries</a> to get you started. In most cases, you can use your favorite package manager:</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">PHP</h2>
+                    <div class="tabcontent">
+
+                        <p>In PHP, you simply install the Clarify SDK using Composer:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/d76fe9c40fe8698b5409.js"></script></p>
+                        <p>And then simply run:</p>
+                        <pre crayon="false">composer install</pre>
+
+                    </div><h2 class="tabtitle">Java</h2>
+                    <div class="tabcontent">
+
+                        <p>In Java, you simply install the Clarify SDK via your Maven pom.xml:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/8d6c09439935c667abec.js"></script></p>
+
+                    </div><h2 class="tabtitle">Python</h2>
+                    <div class="tabcontent">
+
+                        <p>In Python, you simply install the Clarify module via pip:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/fff90c0ec4ab9c1da2dc.js"></script></p>
+
+                    </div><h2 class="tabtitle">Ruby</h2>
+                    <div class="tabcontent">
+
+                        <p>In Ruby, you simply install the Clarify gem and set your API key as an environment variable:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/8c05de89ea29d1e12b17.js"></script></p>
+
+                    </div><h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <p>Although we don&#8217;t have a curl library, the command-line JSON parser &#8220;jq&#8221; is super helpful. Download it and install it to get started: <a href="http://stedolan.github.io/jq/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://stedolan.github.io/jq/', 'http://stedolan.github.io/jq/']);" >http://stedolan.github.io/jq/</a></p>
+                    </div></div>
+                <h3>Loading Audio by Language</h3>
+                <p>Our system needs to know what language your media is in so we can analyze everything properly. You can do this with a single command:</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <p>Using curl, you have to make two requests. First, you create a bundle without media and then you add a track to it specifying the language. Here&#8217;s a sample:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/be75256f8f600baf0219.js"></script></p>
+                    </div></div>
+                <p>Naming the bundle and providing a notify_url are both optional. We have a number of audio and video files available for processing on <a href="http://clarify.io/media">our Media Page</a>.</p>
+                <p><em><strong>Hint:</strong> You don&#8217;t have to download these files. Instead you can pass us these urls via the create method shown above.</em></p>
+                <h3>Searching Media by Language</h3>
+                <p>To search, you use the same object you created before and can search using your keywords. The only change is that you have to specify the language of the term you&#8217;re seeking. This is done with a single command:</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <p>Using curl, you simply add the parameter &#8220;language&#8221; to your request:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/903bb5d97c6d25d1f27b.js"></script></p>
+                    </div></div>
+                <p>From here on, the data structures, and data formats are completely the same as in the English-based search. Now you can dive into our regular <a href="http://clarify.io/docs/quickstarts/media-search/">Media Search Quickstart</a> to display the results in the Clarify <a href="https://github.com/Clarify/clarify-audio-player" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-audio-player', 'audio player']);" >audio player</a> or <a href="https://github.com/Clarify/clarify-video-player" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-video-player', 'video player']);" >video player</a>.</p>
+            </div><!-- .entry-content -->
+        </article><!-- #post -->
+    </div><!-- #content -->
+</div>

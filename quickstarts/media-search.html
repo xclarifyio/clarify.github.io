@@ -1,0 +1,164 @@
+---
+layout: default
+title: Clarify - Media Search Quickstart
+---
+
+<div id="primary" class="content-area">
+    <div class="content article">
+        <article id="post-585" class="post-585 page type-page status-publish hentry">
+            <div class="entry-content">
+                <h3>Getting Started with Media Search</h3>
+                <p>This quickstart demonstrates a simple way to get started using the Clarify API. Following these steps, it should take you no more than 5-10 minutes to have a fully functional search for your audio.</p>
+                <h3>Configuring Your Environment</h3>
+                <p>While you can use any programming language you choose, we provide a few <a href="https://github.com/Clarify" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify', 'helper libraries']);" >helper libraries</a> to get you started. In most cases, you can use your favorite package manager:</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">PHP</h2>
+                    <div class="tabcontent">
+
+                        <p>In PHP, you simply install the Clarify SDK using Composer:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/d76fe9c40fe8698b5409.js"></script></p>
+                        <p>And then simply run:</p>
+                        <pre crayon="false">composer install</pre>
+
+                    </div><h2 class="tabtitle">Java</h2>
+                    <div class="tabcontent">
+
+                        <p>In Java, you simply install the Clarify SDK via your Maven pom.xml:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/8d6c09439935c667abec.js"></script></p>
+
+                    </div><h2 class="tabtitle">Python</h2>
+                    <div class="tabcontent">
+
+                        <p>In Python, you simply install the Clarify module via pip:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/fff90c0ec4ab9c1da2dc.js"></script></p>
+
+                    </div><h2 class="tabtitle">Ruby</h2>
+                    <div class="tabcontent">
+
+                        <p>In Ruby, you simply install the Clarify gem and set your API key as an environment variable:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/8c05de89ea29d1e12b17.js"></script></p>
+
+                    </div><h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <p>Although we don&#8217;t have a curl library, the command-line JSON parser &#8220;jq&#8221; is super helpful. Download it and install it to get started: <a href="http://stedolan.github.io/jq/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://stedolan.github.io/jq/', 'http://stedolan.github.io/jq/']);" >http://stedolan.github.io/jq/</a></p>
+                    </div></div>
+                <h3>Loading Audio</h3>
+                <p>First include the SDK and create your object using your API Key. Once you&#8217;ve created the object, you can use the object to load each of your audio files as shown:</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">PHP</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/74ac1cce0e65625b92ab.js"></script></p>
+
+                    </div><h2 class="tabtitle">Java</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/1729f47c7a9e4ff679fe.js"></script></p>
+
+                    </div><h2 class="tabtitle">Python</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/0e32e470dc9d58a44df6.js"></script></p>
+
+                    </div><h2 class="tabtitle">Ruby</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/6a8f2fc78e3bcab19de4.js"></script></p>
+
+                    </div><h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/24f45a2dbd99681b1655.js"></script></p>
+                    </div></div>
+                <p>Naming the bundle and providing a notify_url are both optional. We have a number of audio and video files available for processing on <a href="http://clarify.io/media">our Media Page</a>.</p>
+                <p><em><strong>Hint:</strong> You don&#8217;t have to download these files. Instead you can pass us these urls via the create method shown above.</em></p>
+                <h3>Searching Audio</h3>
+                <p><em><strong>Note:</strong> While we process files as we receive them, there will be a delay before your file is available for searching. This is normally 1 minute for every minute of audio/video.</em></p>
+                <p>To search, you use the same object you created before and just search using your keywords. If you uploaded the “Wizard of Oz” audio clip, you can search for “dorothy”. Then you can process and interact the results however you wish.</p>
+                <p>The code below simply shows the resulting bundle id, bundle name, and the start/end offsets for each occurrence of the search terms:</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">PHP</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/ea40d23cc59243fad6aa.js"></script></p>
+
+                    </div><h2 class="tabtitle">Java</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/fc17640b2e2d33f0ea59.js"></script></p>
+
+                    </div><h2 class="tabtitle">Python</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/5fccbae4f8252905ae40.js"></script></p>
+
+                    </div><h2 class="tabtitle">Ruby</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/71b5f9214ffab5e89818.js"></script></p>
+
+                    </div><h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/0c7a53e2b2c128a15699.js"></script></p>
+                    </div></div>
+                <p>And here are the results using the Wizard of Oz clip we loaded:</p><!-- Crayon Syntax Highlighter v2.7.1 -->
+
+                <div id="crayon-55a334182e18e113370129" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-mac print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+
+                    <div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+                        <div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">PHP</span></div></div>
+                    <div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+                    <div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+                        /v1/audio/8ee0e56929c248ba895d19ead47c9993
+                        Dorothy and the Wizard of Oz
+                        2.35 -- 2.59
+                        172.49 -- 172.83
+                        224.82 -- 225.08
+                        271.49 -- 271.8
+                        329.1 -- 329.31
+                        480.45 -- 480.92</textarea></div>
+                    <div class="crayon-main" style="">
+                        <table class="crayon-table">
+                            <tr class="crayon-row">
+                                <td class="crayon-nums " data-settings="show">
+                                    <div class="crayon-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-55a334182e18e113370129-1">1</div><div class="crayon-num crayon-striped-num" data-line="crayon-55a334182e18e113370129-2">2</div><div class="crayon-num" data-line="crayon-55a334182e18e113370129-3">3</div><div class="crayon-num crayon-striped-num" data-line="crayon-55a334182e18e113370129-4">4</div><div class="crayon-num" data-line="crayon-55a334182e18e113370129-5">5</div><div class="crayon-num crayon-striped-num" data-line="crayon-55a334182e18e113370129-6">6</div><div class="crayon-num" data-line="crayon-55a334182e18e113370129-7">7</div><div class="crayon-num crayon-striped-num" data-line="crayon-55a334182e18e113370129-8">8</div></div>
+                                </td>
+                                <td class="crayon-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-55a334182e18e113370129-1"><span class="crayon-o">/</span><span class="crayon-i">v1</span><span class="crayon-o">/</span><span class="crayon-i">audio</span><span class="crayon-o">/</span><span class="crayon-cn">8ee0e56929c248ba895d19ead47c9993</span></div><div class="crayon-line crayon-striped-line" id="crayon-55a334182e18e113370129-2"><span class="crayon-e">Dorothy </span><span class="crayon-st">and</span><span class="crayon-h"> </span><span class="crayon-e">the </span><span class="crayon-e">Wizard </span><span class="crayon-e">of </span><span class="crayon-i">Oz</span></div><div class="crayon-line" id="crayon-55a334182e18e113370129-3"><span class="crayon-cn">2.35</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-cn">2.59</span></div><div class="crayon-line crayon-striped-line" id="crayon-55a334182e18e113370129-4"><span class="crayon-cn">172.49</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-cn">172.83</span></div><div class="crayon-line" id="crayon-55a334182e18e113370129-5"><span class="crayon-cn">224.82</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-cn">225.08</span></div><div class="crayon-line crayon-striped-line" id="crayon-55a334182e18e113370129-6"><span class="crayon-cn">271.49</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-cn">271.8</span></div><div class="crayon-line" id="crayon-55a334182e18e113370129-7"><span class="crayon-cn">329.1</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-cn">329.31</span></div><div class="crayon-line crayon-striped-line" id="crayon-55a334182e18e113370129-8"><span class="crayon-cn">480.45</span><span class="crayon-h"> </span><span class="crayon-o">--</span><span class="crayon-h"> </span><span class="crayon-cn">480.92</span></div></div></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!-- [Format Time: 0.0071 seconds] -->
+                <p></p>
+                <h3>Putting it All Together</h3>
+                <p>From here, we can visualize our search results with our included <a href="https://github.com/Clarify/clarify-audio-player" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-audio-player', 'audio player']);" >audio player</a>. The player should work with minimal additional configuration, but the bulk of the logic is already above in the results.<br />
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">PHP</h2>
+                    <div class="tabcontent">
+                </p>
+                <style>.gist table { margin-bottom: 0; }</style>
+                <p><script src="https://gist.github.com/caseysoftware/61b7ba71d82def9cbbfc.js"></script></p>
+
+            </div><h2 class="tabtitle">Python</h2>
+            <div class="tabcontent">
+
+                <style>.gist table { margin-bottom: 0; }</style>
+                <p><script src="https://gist.github.com/caseysoftware/50c11c58b65d5127eae6.js"></script></p>
+            </div></div>
+</div>

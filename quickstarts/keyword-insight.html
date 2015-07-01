@@ -1,0 +1,115 @@
+---
+layout: default
+title: Clarify - Keyword Insight Quickstart
+---
+
+<div id="primary" class="content-area">
+    <div class="content article">
+        <article id="post-625" class="post-625 page type-page status-publish hentry">
+            <div class="entry-content">
+                <h3>Getting your Spoken keywords</h3>
+                <p>This quickstart demonstrates how to load an audio file and request your spoken keywords in just a matter of minutes.</p>
+                <h3>Configuring Your Environment</h3>
+                <p>While you can use any programming language you choose, we provide a few <a href="https://github.com/Clarify" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify', 'helper libraries']);" >helper libraries</a> to complete processing. In most cases, you can use your favorite package manager:</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">PHP</h2>
+                    <div class="tabcontent">
+
+                        <p>In PHP, you simply install the Clarify SDK using Composer:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/d76fe9c40fe8698b5409.js"></script></p>
+                        <p>And then simply run:</p>
+                        <pre crayon="false">composer install</pre>
+
+                    </div><h2 class="tabtitle">Java</h2>
+                    <div class="tabcontent">
+
+                        <p>In Java, you simply install the Clarify SDK via your Maven pom.xml:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/8d6c09439935c667abec.js"></script></p>
+
+                    </div><h2 class="tabtitle">Python</h2>
+                    <div class="tabcontent">
+
+                        <p>In Python, you simply install the Clarify module via pip:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/fff90c0ec4ab9c1da2dc.js"></script></p>
+
+                    </div><h2 class="tabtitle">Ruby</h2>
+                    <div class="tabcontent">
+
+                        <p>In Ruby, you simply install the Clarify gem and set your API key as an environment variable:</p>
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/8c05de89ea29d1e12b17.js"></script></p>
+
+                    </div><h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <p>Although we don&#8217;t have a curl library, the command-line JSON parser &#8220;jq&#8221; is super helpful. Download it and install it to get started: <a href="http://stedolan.github.io/jq/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://stedolan.github.io/jq/', 'http://stedolan.github.io/jq/']);" >http://stedolan.github.io/jq/</a></p>
+                    </div></div>
+                <h3>Loading Audio</h3>
+                <p>First include the SDK and create your object using your API Key. Once you&#8217;ve created the object, you can use the object to load each of your audio files as shown:</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">PHP</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/74ac1cce0e65625b92ab.js"></script></p>
+
+                    </div><h2 class="tabtitle">Java</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/1729f47c7a9e4ff679fe.js"></script></p>
+
+                    </div><h2 class="tabtitle">Python</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/0e32e470dc9d58a44df6.js"></script></p>
+
+                    </div><h2 class="tabtitle">Ruby</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/6a8f2fc78e3bcab19de4.js"></script></p>
+
+                    </div><h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/24f45a2dbd99681b1655.js"></script></p>
+                    </div></div>
+                <p>Naming the bundle and providing a notify_url are both optional. We have a number of audio and video files available for processing on <a href="http://clarify.io/media">our Media Page</a>.</p>
+                <p><em><strong>Hint:</strong> You don&#8217;t have to download these files. Instead you can pass us these urls via the create method shown above.</em></p>
+                <p>After creating a bundle, you&#8217;ll receive a response which looks something like this:</p>
+                <style>.gist table { margin-bottom: 0; }</style>
+                <p><script src="https://gist.github.com/caseysoftware/ae8e130d22eb59a44e0d.js"></script></p>
+                <h3>Getting your Keywords</h3>
+                <p>The most important part of the bundle notification is the &#8216;href&#8217; of the &#8216;clarify:insights&#8217; key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/47cdfbdbf541c4ddf9c2.js"></script></p>
+                    </div></div>
+                <p>This list will look something like this:</p>
+                <style>.gist table { margin-bottom: 0; }</style>
+                <p><script src="https://gist.github.com/caseysoftware/ca69827bbfc25dc4cd71.js"></script></p>
+                <p>The next step is to use the &#8216;insight:spoken_keywords&#8217; URI to retrieve the results of the processing.</p>
+                <div class="responsive-tabs">
+                    <h2 class="tabtitle">curl</h2>
+                    <div class="tabcontent">
+
+                        <style>.gist table { margin-bottom: 0; }</style>
+                        <p><script src="https://gist.github.com/caseysoftware/bc8db1ed992bd5d2188b.js"></script></p>
+                    </div></div>
+                <p>The final result of which is our list of keywords:</p>
+                <style>.gist table { margin-bottom: 0; }</style>
+                <p><script src="https://gist.github.com/caseysoftware/cf9ff42e664a44060915.js"></script></p>
+                <p>From here, we can process the keywords just like any other JSON array. You may want to use them to perform informed searches, display word clouds, or tag your media. At this point, it&#8217;s up to you.</p>
+            </div><!-- .entry-content -->
+        </article><!-- #post -->
+    </div><!-- #content -->
+</div>
