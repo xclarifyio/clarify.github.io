@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+    {% include head.html %}
+    <script src="/assets/js/easyResponsiveTabs.js"></script>
+</head>
+<body>
+<div id='skrollr-body'>
+    <input type="hidden" class="bp_data" data-bp="pc" data-value="960" />
+    <div class='generalSitebackgroundDiv'></div>
+    <div class='innerMainPanel0'></div>
+    <div class='dataTypeMainPanel mainMainPanel0' data-type='MainPanel'>
+        {% include navigation.html %}
+
+        <div data-id='mainShape24' class='dataTypeShape  mainShape24 mainShape' data-type='Shape' ></div>
+
+        <header>
+            <div class='dataTypeMainRow mainMainRow1 ' data-type='MainRow'>
+                <div class='dataTypeMainContent mainMainContent2' data-type='MainContent'></div>
+            </div>
+        </header>
+        <div class="layout">
+            <section class="body_container_bottom">
+                <section class="container_left">
+                    {{ content }}
+                </section>
+                <aside class="container_right">
+                    {% include sidebar.html %}
+                </aside>
+            </section>
+
+            <link rel="stylesheet" type="text/css" href="/assets/css/blog.css"/>
+            <link rel="stylesheet" type="text/css" href="/assets/css/easy-responsive-tabs.css" />
+        </div>
+        {% include footer.html %}
+    </div>
+</div>
+{% include ga.html %}
+</body>
+</html>
