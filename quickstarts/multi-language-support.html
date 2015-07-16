@@ -11,41 +11,11 @@ title: Clarify - Multi-language Support Quickstart
                 <p>This quickstart demonstrates a simple way to get started using the Clarify API. Following these steps, it should take you no more than 5-10 minutes to support search in a variety of languages.</p>
                 <p>We currently support English (default), Spanish (es), and French (fr). More languages are on the way.</p>
                 <pre crayon="false"><strong>Note:</strong> Please contact us at <a href="mailto:support@clarify.io">support@clarify.io</a> to add languages beyond English.</pre>
+
                 <h3>Configuring Your Environment</h3>
                 <p>While you can use any programming language you choose, we provide a few <a href="https://github.com/Clarify" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify', 'helper libraries']);" >helper libraries</a> to get you started. In most cases, you can use your favorite package manager:</p>
 
-                <div id="setup-tabs">
-                    <ul class="resp-tabs-list setup-tabs">
-                        <li>PHP</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>Ruby</li>
-                        <li>curl</li>
-                    </ul>
-                    <div class="resp-tabs-container setup-tabs">
-                        <div>
-                            <p>In PHP, you simply install the Clarify SDK using Composer:</p>
-                            <script src="https://gist.github.com/caseysoftware/d76fe9c40fe8698b5409.js"></script>
-                            <p>And then simply run:</p>
-                            <pre crayon="false">composer install</pre>
-                        </div>
-                        <div>
-                            <p>In Java, you simply install the Clarify SDK via your Maven pom.xml:</p>
-                            <script src="https://gist.github.com/caseysoftware/8d6c09439935c667abec.js"></script>
-                        </div>
-                        <div>
-                            <p>In Python, you simply install the Clarify module via pip:</p>
-                            <script src="https://gist.github.com/caseysoftware/fff90c0ec4ab9c1da2dc.js"></script>
-                        </div>
-                        <div>
-                            <p>In Ruby, you simply install the Clarify gem and set your API key as an environment variable:</p>
-                            <script src="https://gist.github.com/caseysoftware/8c05de89ea29d1e12b17.js"></script>
-                        </div>
-                        <div>
-                            <p>Although we don&#8217;t have a curl library, the command-line JSON parser &#8220;jq&#8221; is super helpful. Download it and install it to get started: <a href="http://stedolan.github.io/jq/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://stedolan.github.io/jq/', 'http://stedolan.github.io/jq/']);" >http://stedolan.github.io/jq/</a></p>
-                        </div>
-                    </div>
-                </div>
+                {% include /tab-sections/setup.html %}
 
                 <h3>Loading Audio by Language</h3>
                 <p>Our system needs to know what language your media is in so we can analyze everything properly. You can do this with a single command:</p>
@@ -87,16 +57,6 @@ title: Clarify - Multi-language Support Quickstart
 
 <script>
     $(document).ready(function() {
-        $('#setup-tabs').easyResponsiveTabs({
-            tabidentify: 'setup-tabs', // The tab groups identifier
-            activetab_bg: '#fff', // background color for active tabs in this group
-            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-        });
-    });
-
-    $(document).ready(function() {
         $('#language-tabs').easyResponsiveTabs({
             tabidentify: 'language-tabs', // The tab groups identifier
             activetab_bg: '#fff', // background color for active tabs in this group
@@ -104,9 +64,7 @@ title: Clarify - Multi-language Support Quickstart
             active_border_color: '#c1c1c1', // border color for active tabs heads in this group
             active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
         });
-    });
 
-    $(document).ready(function() {
         $('#language-search-tabs').easyResponsiveTabs({
             tabidentify: 'language-search-tabs', // The tab groups identifier
             activetab_bg: '#fff', // background color for active tabs in this group

@@ -7,107 +7,28 @@ title: Clarify - Media Search Quickstart
     <div class="content article">
         <article class="page type-page status-publish hentry">
             <div class="entry-content">
+
                 <h3>Getting Started with Media Search</h3>
                 <p>This quickstart demonstrates a simple way to get started using the Clarify API. Following these steps, it should take you no more than 5-10 minutes to have a fully functional search for your audio.</p>
                 <h3>Configuring Your Environment</h3>
                 <p>While you can use any programming language you choose, we provide a few <a href="https://github.com/Clarify" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify', 'helper libraries']);" >helper libraries</a> to get you started. In most cases, you can use your favorite package manager:</p>
 
-                <div id="setup-tabs">
-                    <ul class="resp-tabs-list setup-tabs">
-                        <li>PHP</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>Ruby</li>
-                        <li>curl</li>
-                    </ul>
-                    <div class="resp-tabs-container setup-tabs">
-                        <div>
-                            <p>In PHP, you simply install the Clarify SDK using Composer:</p>
-                            <script src="https://gist.github.com/caseysoftware/d76fe9c40fe8698b5409.js"></script>
-                            <p>And then simply run:</p>
-                            <pre crayon="false">composer install</pre>
-                        </div>
-                        <div>
-                            <p>In Java, you simply install the Clarify SDK via your Maven pom.xml:</p>
-                            <script src="https://gist.github.com/caseysoftware/8d6c09439935c667abec.js"></script>
-                        </div>
-                        <div>
-                            <p>In Python, you simply install the Clarify module via pip:</p>
-                            <script src="https://gist.github.com/caseysoftware/fff90c0ec4ab9c1da2dc.js"></script>
-                        </div>
-                        <div>
-                            <p>In Ruby, you simply install the Clarify gem and set your API key as an environment variable:</p>
-                            <script src="https://gist.github.com/caseysoftware/8c05de89ea29d1e12b17.js"></script>
-                        </div>
-                        <div>
-                            <p>Although we don&#8217;t have a curl library, the command-line JSON parser &#8220;jq&#8221; is super helpful. Download it and install it to get started: <a href="http://stedolan.github.io/jq/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://stedolan.github.io/jq/', 'http://stedolan.github.io/jq/']);" >http://stedolan.github.io/jq/</a></p>
-                        </div>
-                    </div>
-                </div>
+                {% include /tab-sections/setup.html %}
 
                 <h3>Loading Audio</h3>
                 <p>First include the SDK and create your object using your API Key. Once you&#8217;ve created the object, you can use the object to load each of your audio files as shown:</p>
 
-                <div id="media-loading-tabs">
-                    <ul class="resp-tabs-list media-loading-tabs">
-                        <li>PHP</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>Ruby</li>
-                        <li>curl</li>
-                    </ul>
-                    <div class="resp-tabs-container media-loading-tabs">
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/74ac1cce0e65625b92ab.js"></script>
-                        </div>
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/1729f47c7a9e4ff679fe.js"></script>
-                        </div>
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/0e32e470dc9d58a44df6.js"></script>
-                        </div>
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/6a8f2fc78e3bcab19de4.js"></script>
-                        </div>
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/24f45a2dbd99681b1655.js"></script>
-                        </div>
-                    </div>
-                </div>
+                {% include /tab-sections/media-loading.html %}
 
                 <p>Naming the bundle and providing a notify_url are both optional. We have a number of audio and video files available for processing on <a href="http://clarify.io/media">our Media Page</a>.</p>
                 <p><em><strong>Hint:</strong> You don&#8217;t have to download these files. Instead you can pass us these urls via the create method shown above.</em></p>
+
                 <h3>Searching Audio</h3>
                 <p><em><strong>Note:</strong> While we process files as we receive them, there will be a delay before your file is available for searching. This is normally 1 minute for every minute of audio/video.</em></p>
                 <p>To search, you use the same object you created before and just search using your keywords. If you uploaded the “Wizard of Oz” audio clip, you can search for “dorothy”. Then you can process and interact the results however you wish.</p>
                 <p>The code below simply shows the resulting bundle id, bundle name, and the start/end offsets for each occurrence of the search terms:</p>
 
-                <div id="searching-tabs">
-                    <ul class="resp-tabs-list searching-tabs">
-                        <li>PHP</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                        <li>Ruby</li>
-                        <li>curl</li>
-                    </ul>
-                    <div class="resp-tabs-container searching-tabs">
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/ea40d23cc59243fad6aa.js"></script>
-                        </div>
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/fc17640b2e2d33f0ea59.js"></script>
-                        </div>
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/5fccbae4f8252905ae40.js"></script>
-                        </div>
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/71b5f9214ffab5e89818.js"></script>
-                        </div>
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/0c7a53e2b2c128a15699.js"></script>
-                        </div>
-                    </div>
-                </div>
+                {% include /tab-sections/media-searching.html %}
 
                 <p>And here are the results using the Wizard of Oz clip we loaded:</p>
 
@@ -143,30 +64,6 @@ Dorothy and the Wizard of Oz
 </div>
 <script>
     $(document).ready(function() {
-        $('#setup-tabs').easyResponsiveTabs({
-            tabidentify: 'setup-tabs', // The tab groups identifier
-            activetab_bg: '#fff', // background color for active tabs in this group
-            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-        });
-
-        $('#media-loading-tabs').easyResponsiveTabs({
-            tabidentify: 'media-loading-tabs', // The tab groups identifier
-            activetab_bg: '#fff', // background color for active tabs in this group
-            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-        });
-
-        $('#searching-tabs').easyResponsiveTabs({
-            tabidentify: 'searching-tabs', // The tab groups identifier
-            activetab_bg: '#fff', // background color for active tabs in this group
-            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-        });
-
         $('#player-tabs').easyResponsiveTabs({
             tabidentify: 'player-tabs', // The tab groups identifier
             activetab_bg: '#fff', // background color for active tabs in this group
