@@ -1,0 +1,38 @@
+<div id="media-loading-tabs">
+    <ul class="resp-tabs-list media-loading-tabs">
+        <li>PHP</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Ruby</li>
+        <li>curl</li>
+    </ul>
+    <div class="resp-tabs-container media-loading-tabs">
+        <div>
+            <script src="https://gist.github.com/caseysoftware/74ac1cce0e65625b92ab.js"></script>
+        </div>
+        <div>
+            <script src="https://gist.github.com/caseysoftware/1729f47c7a9e4ff679fe.js"></script>
+        </div>
+        <div>
+            <script src="https://gist.github.com/caseysoftware/0e32e470dc9d58a44df6.js"></script>
+        </div>
+        <div>
+            <script src="https://gist.github.com/caseysoftware/6a8f2fc78e3bcab19de4.js"></script>
+        </div>
+        <div>
+            <script src="https://gist.github.com/caseysoftware/24f45a2dbd99681b1655.js"></script>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#media-loading-tabs').easyResponsiveTabs({
+            tabidentify: 'media-loading-tabs', // The tab groups identifier
+            activetab_bg: '#fff', // background color for active tabs in this group
+            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+        });
+    });
+</script>
