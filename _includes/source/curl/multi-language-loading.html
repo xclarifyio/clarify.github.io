@@ -1,0 +1,19 @@
+<div>
+    <p>Using curl, you have to make two requests. First, you create a bundle without media and then you add a track to it specifying the language. Here&#8217;s a sample:</p>
+    <pre>
+<code class="bash">
+# First you create the placeholder bundle
+
+curl --data "notify_url=http://example.org/sample-receiver" \
+     --data "name=Je Vous ai Compris" https://api.clarify.io/v1/bundles \
+     --header "Authorization: Bearer myapikey"
+
+# When you get back the bundle id, you use it in your next request
+# For example, if your bundle is was abcde12345, your code would look like:
+
+curl --data "media_url=http://media.clarify.io.s3.amazonaws.com/video/speeches/je-vous-ai-compris-1958-06-04.mp4" \
+     --data "audio_language=fr" https://api.clarify.io/v1/bundles/abcde12345/tracks \
+     --header "Authorization: Bearer myapikey"
+</code>
+    </pre>
+</div>

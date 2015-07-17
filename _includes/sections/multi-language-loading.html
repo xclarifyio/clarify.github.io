@@ -1,0 +1,27 @@
+<h3>Loading Audio by Language</h3>
+<p>Our system needs to know what language your media is in so we can analyze everything properly. You can do this with a single command:</p>
+
+<div id="language-tabs">
+    <ul class="resp-tabs-list language-tabs">
+        <li>curl</li>
+    </ul>
+    <div class="resp-tabs-container language-tabs">
+        {% include /source/curl/multi-language-loading.html %}
+    </div>
+</div>
+
+<p>Naming the bundle and providing a notify_url are both optional. We have a number of audio and video files available for processing on <a href="http://clarify.io/media">our Media Page</a>.</p>
+<p><em><strong>Hint:</strong> You don&#8217;t have to download these files. Instead you can pass us these urls via the create method shown above.</em></p>
+
+<script>
+    $(document).ready(function() {
+        $('#language-tabs').easyResponsiveTabs({
+            tabidentify: 'language-tabs', // The tab groups identifier
+            activetab_bg: '#fff', // background color for active tabs in this group
+            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+        });
+
+    });
+</script>

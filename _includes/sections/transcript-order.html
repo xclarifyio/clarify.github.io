@@ -1,0 +1,17 @@
+<h3>Requesting a Transcript</h3>
+<p>The most important part is the &#8216;href&#8217; of the &#8216;clarify:insights&#8217; key. By making an HTTP POST to that URI, Clarify will start processing the audio to create the transcript.</p>
+
+<div id="request-transcript-tabs">
+    <ul class="resp-tabs-list request-transcript-tabs">
+        <li>curl</li>
+    </ul>
+    <div class="resp-tabs-container request-transcript-tabs">
+        {% include /source/curl/transcript-order.html %}
+    </div>
+</div>
+
+<p>This will return JSON with the status of the request:</p>
+
+{% include /source/json/transcript_status.html %}
+
+{% include /sections/_note_transcripts.html %}

@@ -17,43 +17,27 @@ languages:
 
                 {% include /sections/media-loading.html %}
 
-                <p>After creating a bundle, you&#8217;ll receive a response which looks something like this:</p>
-                
-                <script src="https://gist.github.com/caseysoftware/ae8e130d22eb59a44e0d.js"></script>
+                <p>After creating a bundle, you'll receive a response which looks something like this:</p>
+
+                {% include /source/json/bundle_callback.html %}
 
                 <h3>Getting your Keywords</h3>
                 <p>The most important part of the bundle notification is the &#8216;href&#8217; of the &#8216;clarify:insights&#8217; key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.</p>
 
-                <div id="keyword-tabs">
-                    <ul class="resp-tabs-list keyword-tabs">
-                        <li>curl</li>
-                    </ul>
-                    <div class="resp-tabs-container keyword-tabs">
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/47cdfbdbf541c4ddf9c2.js"></script>
-                        </div>
-                    </div>
-                </div>
+                {% include /sections/insight-links.html %}
 
-                <p>This list will look something like this:</p>
-                
-                <script src="https://gist.github.com/caseysoftware/ca69827bbfc25dc4cd71.js"></script>
-                <p>The next step is to use the &#8216;insight:spoken_keywords&#8217; URI to retrieve the results of the processing.</p>
+                <p>This will return with the list of available insights:</p>
 
-                <div id="get-keyword-tabs">
-                    <ul class="resp-tabs-list get-keyword-tabs">
-                        <li>curl</li>
-                    </ul>
-                    <div class="resp-tabs-container get-keyword-tabs">
-                        <div>
-                            <script src="https://gist.github.com/caseysoftware/bc8db1ed992bd5d2188b.js"></script>
-                        </div>
-                    </div>
-                </div>
+                {% include /source/json/insights_r4.html %}
+
+                <p>The most important part of this payload is the 'href' of the 'insight:spoken_keywords' key. By retrieving the contents of that URI, Clarify will give you the top 20 keywords recognized from the audio.</p>
+
+                {% include /sections/keyword-request.html %}
 
                 <p>The final result of which is our list of keywords:</p>
-                
-                <script src="https://gist.github.com/caseysoftware/cf9ff42e664a44060915.js"></script>
+
+                {% include /source/json/insights_keywords.html %}
+
                 <p>From here, we can process the keywords just like any other JSON array. You may want to use them to perform informed searches, display word clouds, or tag your media. At this point, it&#8217;s up to you.</p>
             </div>
         </article>
