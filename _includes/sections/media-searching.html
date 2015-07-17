@@ -1,3 +1,8 @@
+<h3>Searching Audio</h3>
+<p><em><strong>Note:</strong> While we process files as we receive them, there will be a delay before your file is available for searching. This is normally 1 minute for every minute of audio/video.</em></p>
+<p>To search, you use the same object you created before and just search using your keywords. If you uploaded the “Wizard of Oz” audio clip, you can search for “dorothy”. Then you can process and interact the results however you wish.</p>
+<p>The code below simply shows the resulting bundle id, bundle name, and the start/end offsets for each occurrence of the search terms:</p>
+
 <div id="searching-tabs">
     <ul class="resp-tabs-list searching-tabs">
         <li>PHP</li>
@@ -24,6 +29,17 @@
         </div>
     </div>
 </div>
+
+<p>And here are the results using the Wizard of Oz clip we loaded:</p>
+
+<pre>/v1/audio/8ee0e56929c248ba895d19ead47c9993
+Dorothy and the Wizard of Oz
+2.35 -- 2.59
+172.49 -- 172.83
+224.82 -- 225.08
+271.49 -- 271.8
+329.1 -- 329.31
+480.45 -- 480.92</pre>
 
 <script>
     $(document).ready(function() {

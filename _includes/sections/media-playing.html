@@ -1,0 +1,29 @@
+<h3>Putting it All Together</h3>
+<p>From here, we can visualize our search results with our included <a href="https://github.com/Clarify/clarify-audio-player" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-audio-player', 'audio player']);" >audio player</a>. The player should work with minimal additional configuration, but the bulk of the logic is already above in the results.</p>
+
+<div id="player-tabs">
+    <ul class="resp-tabs-list player-tabs">
+        <li>PHP</li>
+        <li>Python</li>
+    </ul>
+    <div class="resp-tabs-container player-tabs">
+        <div>
+            <script src="https://gist.github.com/caseysoftware/61b7ba71d82def9cbbfc.js"></script>
+        </div>
+        <div>
+            <script src="https://gist.github.com/caseysoftware/50c11c58b65d5127eae6.js"></script>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#player-tabs').easyResponsiveTabs({
+            tabidentify: 'player-tabs', // The tab groups identifier
+            activetab_bg: '#fff', // background color for active tabs in this group
+            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+        });
+    });
+</script>
