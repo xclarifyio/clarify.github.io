@@ -22,12 +22,6 @@
     margin-top: 25px;
 }
 
-.content span, .blog span {
-    font: 300 14px/16px 'Open Sans';
-    color: #333;
-    display: inline-block;
-}
-
 .date {
     margin: 0 15px 0 0;
 }
