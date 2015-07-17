@@ -9,7 +9,7 @@
     </ul>
     <div class="resp-tabs-container media-loading-tabs">
         {% for language in page.languages %}
-        {% include /source/{{language}}/media-loading.html %}
+        {% include /source/{{language | downcase}}/media-loading.html %}
         {% endfor %}
     </div>
 </div>

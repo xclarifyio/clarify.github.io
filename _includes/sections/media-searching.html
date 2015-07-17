@@ -11,7 +11,7 @@
     </ul>
     <div class="resp-tabs-container searching-tabs">
         {% for language in page.languages %}
-        {% include /source/{{language}}/media-searching.html %}
+        {% include /source/{{language | downcase}}/media-searching.html %}
         {% endfor %}
     </div>
 </div>
