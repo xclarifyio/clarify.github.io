@@ -1,3 +1,12 @@
 <div>
-    <script src="https://gist.github.com/caseysoftware/24f45a2dbd99681b1655.js"></script>
+    <pre>
+<code class="bash">
+curl --data "media_url=http://media.clarify.io/audio/books/dorothyandthewizardinoz_01_baum_64kb.mp3" \
+     --data "notify_url=http://example.org/sample-receiver" \
+     --data "name=Dorothy and the Wizard of Oz" https://api.clarify.io/v1/bundles \
+     --header "Authorization: Bearer myapikey"
+
+# Remember, the notify_url and name are optional and included here for completeness.
+</code>
+    </pre>
 </div>

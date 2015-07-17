@@ -1,3 +1,22 @@
 <div>
-    <script src="https://gist.github.com/caseysoftware/5fccbae4f8252905ae40.js"></script>
+    <pre>
+<code class="python">
+from clarify_python import clarify
+
+clarify.set_key('my api key')
+
+result = clarify.search(query='dorothy')
+results = result['item_results']
+items = result['_links']['items']
+
+for item in items:
+    bundle = clarify.get_bundle(item['href'])
+
+    print(bundle['name'])
+
+    search_hits = results[index]['term_results'][0]['matches'][0]['hits']
+    for search_hit in search_hits:
+        print(str(search_hit['start']) + ' -- ' + str(search_hit['end']))
+</code>
+    </pre>
 </div>
