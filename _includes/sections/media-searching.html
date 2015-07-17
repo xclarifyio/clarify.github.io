@@ -5,28 +5,14 @@
 
 <div id="searching-tabs">
     <ul class="resp-tabs-list searching-tabs">
-        <li>PHP</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>Ruby</li>
-        <li>curl</li>
+        {% for language in page.languages %}
+        <li>{{ language }}</li>
+        {% endfor %}
     </ul>
     <div class="resp-tabs-container searching-tabs">
-        <div>
-            <script src="https://gist.github.com/caseysoftware/ea40d23cc59243fad6aa.js"></script>
-        </div>
-        <div>
-            <script src="https://gist.github.com/caseysoftware/fc17640b2e2d33f0ea59.js"></script>
-        </div>
-        <div>
-            <script src="https://gist.github.com/caseysoftware/5fccbae4f8252905ae40.js"></script>
-        </div>
-        <div>
-            <script src="https://gist.github.com/caseysoftware/71b5f9214ffab5e89818.js"></script>
-        </div>
-        <div>
-            <script src="https://gist.github.com/caseysoftware/0c7a53e2b2c128a15699.js"></script>
-        </div>
+        {% for language in page.languages %}
+        {% include /source/{{language}}/media-searching.html %}
+        {% endfor %}
     </div>
 </div>
 
