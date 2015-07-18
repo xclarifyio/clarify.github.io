@@ -13,6 +13,13 @@ This is the repository for all the documentation for the Clarify.io API which is
 * Insights & Reports
  * Spoken Words Report
  * Topics Insight (beta)
+* Code samples
+ * Implement PHP for everything
+ * Implement Python for everything
+ * Implement Java for everything
+ * Implement Ruby for everything
+ * Implement Node for everything
+ * Implement C# for everything
 
 ## Contributing
 
