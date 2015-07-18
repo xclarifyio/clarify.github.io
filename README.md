@@ -5,14 +5,14 @@ This is the repository for all the documentation for the Clarify.io API which is
 
 ## Todo list
 
-~~1. Convert existing site~~
-~~1. Set up basic template w/ header, footer, etc~~
-~~1. Move all the code from Gists into the repo~~
-~~1. Find a good syntax highlighter~~
-1. Convert the swagger iframe to actual docs
-1. Insights & Reports
- 1. Spoken Words Report
- 1. Topics Insight (beta)
+* ~~Convert existing site~~
+* ~~Set up basic template w/ header, footer, etc~~
+* ~~Move all the code from Gists into the repo~~
+* ~~Find a good syntax highlighter~~
+* Convert the swagger iframe to actual docs
+* Insights & Reports
+ * Spoken Words Report
+ * Topics Insight (beta)
 
 ## Contributing
 
