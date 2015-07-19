@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
     <head>
         {% include head.html %}
+        <link rel="stylesheet" type="text/css" href="/assets/css/easy-responsive-tabs.css" />
         <script src="/assets/js/easyResponsiveTabs.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
         <link rel="stylesheet" href="/assets/css/zenburn.css">
@@ -11,7 +12,6 @@
         <div>
             <input type="hidden" class="bp_data" data-bp="pc" data-value="960" />
             <div class='generalSitebackgroundDiv'></div>
-            <div class='innerMainPanel0'></div>
             <div class='dataTypeMainPanel mainMainPanel0' data-type='MainPanel'>
                 {% include navigation.html %}
 
@@ -25,16 +25,16 @@
                 <div class="layout">
                     <section class="body_container_bottom">
                         <section class="container_left">
+                            <h1>{{ page.title }}</h1>
+
                             {{ content }}
                         </section>
                         <aside class="container_right">
                             {% include sidebar.html %}
                         </aside>
                     </section>
-
-                    <link rel="stylesheet" type="text/css" href="/assets/css/blog.css"/>
-                    <link rel="stylesheet" type="text/css" href="/assets/css/easy-responsive-tabs.css" />
                 </div>
+
                 {% include footer.html %}
             </div>
         </div>

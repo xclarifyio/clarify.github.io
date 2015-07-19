@@ -1,6 +1,6 @@
 ---
 layout: quickstart
-title: Clarify - Media Search Quickstart
+title: Getting Started with Media Search
 
 languages:
     - PHP
@@ -10,22 +10,12 @@ languages:
     - curl
 ---
 
-<div id="primary" class="content-area">
-    <div class="content article">
-        <article class="page type-page status-publish hentry">
-            <div class="entry-content">
+<p>This quickstart demonstrates a simple way to get started using the Clarify API. Following these steps, it should take you no more than 5-10 minutes to have a fully functional search for your audio.</p>
 
-                <h3>Getting Started with Media Search</h3>
-                <p>This quickstart demonstrates a simple way to get started using the Clarify API. Following these steps, it should take you no more than 5-10 minutes to have a fully functional search for your audio.</p>
+{% include /sections/setup.html %}
 
-                {% include /sections/setup.html %}
+{% include /sections/media-loading.html %}
 
-                {% include /sections/media-loading.html %}
+{% include /sections/media-searching.html %}
 
-                {% include /sections/media-searching.html %}
-
-                {% include /sections/media-playing.html %}
-            </div>
-        </article>
-    </div>
-</div>
+{% include /sections/media-playing.html %}

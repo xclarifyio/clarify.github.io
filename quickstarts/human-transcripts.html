@@ -1,47 +1,38 @@
 ---
 layout: quickstart
-title: Clarify - Human Transcripts Quickstart
+title: Using the HUman Transcription API
 
 languages:
 - curl
 ---
 
-<div id="primary" class="content-area">
-    <div class="content article">
-        <article class="page type-page status-publish hentry">
-            <div class="entry-content">
-                <h3>Using the Transcription API</h3>
-                <p>This quickstart demonstrates how to load an audio file and request a transcript in just a matter of minutes.</p>
+<p>This quickstart demonstrates how to load an audio file and request a transcript in just a matter of minutes.</p>
 
-                {% include /sections/_note_transcripts.html %}
+{% include /sections/_note_transcripts.html %}
 
-                {% include /sections/setup.html %}
+{% include /sections/setup.html %}
 
-                {% include /sections/media-loading.html %}
+{% include /sections/media-loading.html %}
 
-                <p>After creating a bundle, you&#8217;ll receive a response which looks something like this:</p>
+<p>After creating a bundle, you'll receive a response which looks something like this:</p>
 
-                {% include /source/json/bundle_callback.html %}
+{% include /source/json/bundle_callback.html %}
 
-                {% include /sections/transcript-order.html %}
+{% include /sections/transcript-order.html %}
 
-                <h3>Receiving your Transcript</h3>
-                <p>This is where the notify_url becomes important again. Just as we perform a callback once the indexing is complete, we also make a request once the transcript is ready. Here are the contents of that payload:</p>
+<h3>Receiving your Transcript</h3>
+<p>This is where the notify_url becomes important again. Just as we perform a callback once the indexing is complete, we also make a request once the transcript is ready. Here are the contents of that payload:</p>
 
-                {% include /source/json/transcript_callback.html %}
+{% include /source/json/transcript_callback.html %}
 
-                <pre style="background-color: lightgray; padding: 10px;">
+<pre style="background-color: lightgray; padding: 10px;">
 <strong>Note:</strong> For security purposes we do not provide the transcript in the callback but we give you
 the URI necessary to make an authenticated request of your own.</pre>
 
-                <p>The most important part of this payload is the 'href' of the 'insight:transcript_r9' key. By retrieving the contents of that URI, Clarify will give you a complete list of the words recognized from the audio.</p>
+<p>The most important part of this payload is the 'href' of the 'insight:transcript_r9' key. By retrieving the contents of that URI, Clarify will give you a complete list of the words recognized from the audio.</p>
 
-                {% include /sections/insight-request.html %}
+{% include /sections/insight-request.html %}
 
-                <p>The result of which will be a JSON representation of the transcript as shown below. Based on the number and duration of the audio, there will be anywhere from zero to many 'segments,' each describing one portion of the dialog. As long as speech is found, there will be at least one 'speaker' but they may be many depending on how detection works.</p>
+<p>The result of which will be a JSON representation of the transcript as shown below. Based on the number and duration of the audio, there will be anywhere from zero to many 'segments,' each describing one portion of the dialog. As long as speech is found, there will be at least one 'speaker' but they may be many depending on how detection works.</p>
 
-                {% include /source/json/transcript_r9.html %}
-            </div>
-        </article>
-    </div>
-</div>
+{% include /source/json/transcript_r9.html %}

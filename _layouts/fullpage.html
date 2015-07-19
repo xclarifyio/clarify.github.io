@@ -7,7 +7,6 @@
         <div>
             <input type="hidden" class="bp_data" data-bp="pc" data-value="960" />
             <div class='generalSitebackgroundDiv'></div>
-            <div class='innerMainPanel0'></div>
             <div class='dataTypeMainPanel mainMainPanel0' data-type='MainPanel'>
                 {% include navigation.html %}
 
@@ -19,10 +18,10 @@
                     </div>
                 </header>
                 <div class="layout">
-                    <section class="body_container_bottom">
-                        <section class="container_left">
-                            {{ content }}
-                        </section>
+                    <section class="container_full">
+                        <h1>{{ page.title }}</h1>
+
+                        {{ content }}
                     </section>
                 </div>
                 {% include footer.html %}

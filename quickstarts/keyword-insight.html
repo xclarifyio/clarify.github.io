@@ -1,65 +1,36 @@
 ---
 layout: quickstart
-title: Clarify - Keyword Insight Quickstart
+title: Getting your Spoken keywords
 
 languages:
 - curl
 ---
 
-<div id="primary" class="content-area">
-    <div class="content article">
-        <article class="page type-page status-publish hentry">
-            <div class="entry-content">
-                <h3>Getting your Spoken keywords</h3>
-                <p>This quickstart demonstrates how to load an audio file and request your spoken keywords in just a matter of minutes.</p>
+<p>This quickstart demonstrates how to load an audio file and request your spoken keywords in just a matter of minutes.</p>
 
-                {% include /sections/setup.html %}
+{% include /sections/setup.html %}
 
-                {% include /sections/media-loading.html %}
+{% include /sections/media-loading.html %}
 
-                <p>After creating a bundle, you'll receive a response which looks something like this:</p>
+<p>After creating a bundle, you'll receive a response which looks something like this:</p>
 
-                {% include /source/json/bundle_callback.html %}
+{% include /source/json/bundle_callback.html %}
 
-                <h3>Getting your Keywords</h3>
-                <p>The most important part of the bundle notification is the &#8216;href&#8217; of the &#8216;clarify:insights&#8217; key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.</p>
+<h3>Getting your Keywords</h3>
+<p>The most important part of the bundle notification is the &#8216;href' of the &#8216;clarify:insights' key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.</p>
 
-                {% include /sections/insight-links.html %}
+{% include /sections/insight-links.html %}
 
-                <p>This will return with the list of available insights:</p>
+<p>This will return with the list of available insights:</p>
 
-                {% include /source/json/insights_r4.html %}
+{% include /source/json/insights_r4.html %}
 
-                <p>The most important part of this payload is the 'href' of the 'insight:spoken_keywords' key. By retrieving the contents of that URI, Clarify will give you the top 20 keywords recognized from the audio.</p>
+<p>The most important part of this payload is the 'href' of the 'insight:spoken_keywords' key. By retrieving the contents of that URI, Clarify will give you the top 20 keywords recognized from the audio.</p>
 
-                {% include /sections/keyword-request.html %}
+{% include /sections/keyword-request.html %}
 
-                <p>The final result of which is our list of keywords:</p>
+<p>The final result of which is our list of keywords:</p>
 
-                {% include /source/json/insights_keywords.html %}
+{% include /source/json/insights_keywords.html %}
 
-                <p>From here, we can process the keywords just like any other JSON array. You may want to use them to perform informed searches, display word clouds, or tag your media. At this point, it&#8217;s up to you.</p>
-            </div>
-        </article>
-    </div>
-</div>
-
-<script>
-    $(document).ready(function() {
-        $('#keyword-tabs').easyResponsiveTabs({
-            tabidentify: 'keyword-tabs', // The tab groups identifier
-            activetab_bg: '#fff', // background color for active tabs in this group
-            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-        });
-
-        $('#get-keyword-tabs').easyResponsiveTabs({
-            tabidentify: 'get-keyword-tabs', // The tab groups identifier
-            activetab_bg: '#fff', // background color for active tabs in this group
-            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
-            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
-            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
-        });
-    });
-</script>
+<p>From here, we can process the keywords just like any other JSON array. You may want to use them to perform informed searches, display word clouds, or tag your media. At this point, it's up to you.</p>

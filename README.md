@@ -9,6 +9,8 @@ This is the repository for all the documentation for the Clarify.io API which is
 * ~~Set up basic template w/ header, footer, etc~~
 * ~~Move all the code from Gists into the repo~~
 * ~~Find a good syntax highlighter~~
+* Add a directory of errors
+* Add a directory of callback formats
 * Convert the swagger iframe to actual docs
 * Insights & Reports
  * Spoken Words Report
