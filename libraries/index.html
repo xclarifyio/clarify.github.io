@@ -3,43 +3,41 @@ layout: default
 title: Libraries and SDKs
 ---
 
-<div class="entry-content">
-    <h1>Helper Libraries and SDKs</h1>
-    <p>Use one of our helper libraries to use Clarify in your language of choice:</p>
+<h1>Helper Libraries and SDKs</h1>
+<p>Use one of our helper libraries to use Clarify in your language of choice:</p>
 
-    <ul>
-        <li><a href="https://github.com/Clarify/clarify-php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-php', 'clarify-php']);" title="Clarify PHP Library">clarify-php</a> &#8211; Requires PHP 5.3+, installed via Composer</li>
-        <li><a href="https://github.com/Clarify/clarify_python_2" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify_python_2', 'clarify-python 2']);" title="Clarify Python Library">clarify-python 2</a> &#8211; Requires Python 2.x, installed via Pip</li>
-        <li><a href="https://github.com/Clarify/clarify_python" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify_python', 'clarify-python 3']);" title="Clarify Python Library">clarify-python 3</a> &#8211; Requires Python 3.x, installed via Pip</li>
-        <li><a href="https://github.com/Clarify/clarify-java" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-java', 'clarify-java']);" title="Clarify Java Library">clarify-java</a> &#8211; Requires Java 1.6+, installed via Maven</li>
-        <li><a href="https://github.com/Clarify/clarify-ruby" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-ruby', 'clarify-ruby']);" >clarify-ruby</a> &#8211; Requires Ruby 2.0+, installed via Ruby gems</li>
-        <li><a href="https://github.com/Clarify/clarify-csharp" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-csharp', 'clarify-csharp']);" title="Clarify C-Sharp Library">clarify-csharp</a> &#8211; Requires .Net 4.x, installed via Nuget</li>
-        <li><a href="https://github.com/Clarify/clarify-curl" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-curl', 'curl examples']);" >curl examples</a></li>
-    </ul>
+<ul>
+    <li><a href="https://github.com/Clarify/clarify-php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-php', 'clarify-php']);" title="Clarify PHP Library">clarify-php</a> &#8211; Requires PHP 5.3+, installed via Composer</li>
+    <li><a href="https://github.com/Clarify/clarify_python_2" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify_python_2', 'clarify-python 2']);" title="Clarify Python Library">clarify-python 2</a> &#8211; Requires Python 2.x, installed via Pip</li>
+    <li><a href="https://github.com/Clarify/clarify_python" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify_python', 'clarify-python 3']);" title="Clarify Python Library">clarify-python 3</a> &#8211; Requires Python 3.x, installed via Pip</li>
+    <li><a href="https://github.com/Clarify/clarify-java" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-java', 'clarify-java']);" title="Clarify Java Library">clarify-java</a> &#8211; Requires Java 1.6+, installed via Maven</li>
+    <li><a href="https://github.com/Clarify/clarify-ruby" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-ruby', 'clarify-ruby']);" >clarify-ruby</a> &#8211; Requires Ruby 2.0+, installed via Ruby gems</li>
+    <li><a href="https://github.com/Clarify/clarify-csharp" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-csharp', 'clarify-csharp']);" title="Clarify C-Sharp Library">clarify-csharp</a> &#8211; Requires .Net 4.x, installed via Nuget</li>
+    <li><a href="https://github.com/Clarify/clarify-curl" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-curl', 'curl examples']);" >curl examples</a></li>
+</ul>
 
-    <p>It's dangerous to go alone. The helper libraries handle authentication, the HTTP aspects, and even wrap commonly needed functionality in language-specific constructs. You can focus on your app.</p>
-    <p>We provide helper libraries in the languages we use on a regular basis. While we're open to creating and adding more, we want to know which ones you care about. <em><a href="mailto:support@clarify.io">Email us to tell us what you need!</a></em></p>
+<p>It's dangerous to go alone. The helper libraries handle authentication, the HTTP aspects, and even wrap commonly needed functionality in language-specific constructs. You can focus on your app.</p>
+<p>We provide helper libraries in the languages we use on a regular basis. While we're open to creating and adding more, we want to know which ones you care about. <em><a href="mailto:support@clarify.io">Email us to tell us what you need!</a></em></p>
 
-    <hr />
+<hr />
 
-    <h3>SDK Writing Guide</h3>
-    <p>Our goal is to provide helper libraries in the most relevant languages as quickly as possible but sometimes our roadmap doesn't match your timeline. Fear not! Here are some tips and information to get you started.</p>
-    <p>In terms of helper library design, we see four layers:</p>
-    <ul>
-        <li>Authentication/Connectivity</li>
-        <li>Response/Result handling</li>
-        <li>Domain Models</li>
-        <li>Framework-specific opinions</li>
-    </ul>
-    <p>In our language libraries, we will only deal with the first two layers. The final two layers should be handled by framework/domain-specific libraries built on top of our libraries. If you do build something, <a href="mailto:support@clarify.io">let us know</a> so we can give show off your efforts on this page!</p>
-    <p>Here are some general guidelines to get you started:</p>
-    <ul>
-        <li>MUST be idiomatic with the language in which it is written. For example, a C# library will use data structures and patterns common to that platform.</li>
-        <li>MUST follow the commonly accepted coding standards of the language in which it is written.</li>
-        <li>MUST handle authentication, connectivity, and response/result messages in a consistent manner.</li>
-        <li>SHOULD have unit tests to demonstrate it works as described.</li>
-        <li>SHOULD pass along errors as appropriate for the language.</li>
-        <li>MUST NOT hide errors from end users.</li>
-        <li>MAY encapsulate language/framework-specific opinions, data structures, and processes.</li>
-    </ul>
-</div>
+<h3>SDK Writing Guide</h3>
+<p>Our goal is to provide helper libraries in the most relevant languages as quickly as possible but sometimes our roadmap doesn't match your timeline. Fear not! Here are some tips and information to get you started.</p>
+<p>In terms of helper library design, we see four layers:</p>
+<ul>
+    <li>Authentication/Connectivity</li>
+    <li>Response/Result handling</li>
+    <li>Domain Models</li>
+    <li>Framework-specific opinions</li>
+</ul>
+<p>In our language libraries, we will only deal with the first two layers. The final two layers should be handled by framework/domain-specific libraries built on top of our libraries. If you do build something, <a href="mailto:support@clarify.io">let us know</a> so we can give show off your efforts on this page!</p>
+<p>Here are some general guidelines to get you started:</p>
+<ul>
+    <li>MUST be idiomatic with the language in which it is written. For example, a C# library will use data structures and patterns common to that platform.</li>
+    <li>MUST follow the commonly accepted coding standards of the language in which it is written.</li>
+    <li>MUST handle authentication, connectivity, and response/result messages in a consistent manner.</li>
+    <li>SHOULD have unit tests to demonstrate it works as described.</li>
+    <li>SHOULD pass along errors as appropriate for the language.</li>
+    <li>MUST NOT hide errors from end users.</li>
+    <li>MAY encapsulate language/framework-specific opinions, data structures, and processes.</li>
+</ul>

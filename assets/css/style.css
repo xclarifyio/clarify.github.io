@@ -1343,7 +1343,11 @@ footer,header,hgroup,menu,nav,section {
     display: block;
 }
 
-p, label {
+.container_left ul {
+    margin: 30px;
+}
+
+p, label, li {
     color: #555;
     margin: 7px;
     font-size: 16px;
@@ -1412,99 +1416,6 @@ p, label {
     direction: rtl;
     float: none;
     cursor: pointer;
-}
-
-.imagepopup_overlay_fixed {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-
-.imagepopup_overlay {
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    display: none;
-    z-index: 8010;
-    /*background: url('../images/backgrounds/imagepopup_overlay.png');*/
-}
-
-.imagepopup_opened {
-    z-index: 8030;
-}
-
-.imagepopup_wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 8020;
-}
-
-.imagepopup_opened .imagepopup_skin {
-    -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-}
-
-.imagepopup_skin {
-    position: relative;
-    background: #f9f9f9;
-    color: #444;
-    text-shadow: none;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-}
-
-.imagepopup_outer, .imagepopup_inner {
-    position: relative;
-}
-
-.imagepopup_opened .imagepopup_title {
-    visibility: visible;
-}
-
-.imagepopup_title_float_wrap {
-    position: absolute;
-    z-index: 8050;
-    text-align: center;
-}
-
-.imagepopup_title_float_wrap .imagepopup_title_text {
-    display: inline-block;
-    margin-right: -100%;
-    padding: 2px 20px;
-    background: transparent;
-    background: rgba(0, 0, 0, 0.8);
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    text-shadow: 0 1px 2px #111;
-    color: #FFF;
-    font-weight: bold;
-    line-height: 24px;
-    white-space: nowrap;
-    margin: 10px auto;
-}
-
-.imagepopup_title {
-    visibility: hidden;
-    font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
-    position: absolute;
-    text-shadow: none;
-    z-index: 8050;
-    margin-bottom: -35px;
-}
-
-.imagepopup_close {
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    right: -18px;
-    top: -16px;
-    cursor: pointer;
-    z-index: 8040;
-    background: url('../images/backgrounds/close_btn.png') no-repeat;
 }
 
 div.text_editor_resets ul, div.text_editor_resets ol {
