@@ -2000,7 +2000,7 @@ h3 {
     direction: ltr;
 }
 
-.documentation-section div.button {
+div.button {
     background-color:#549FAD;
     padding-top: 12px;
     word-wrap: break-word;
@@ -2058,10 +2058,10 @@ hr {
     margin-bottom: 25px;
 }
 
-.quickstart-button {
+.quickstart.button {
     float: right;
-    padding-top: 15px;
-    padding-left: 10px;
+    margin: 10px;
+    width: 175px;
 }
 
 code span {
