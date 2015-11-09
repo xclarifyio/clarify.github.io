@@ -87,7 +87,6 @@
     top: 0;
     left: 0;
     width: 960px;
-    min-height: 59px;
     height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -231,8 +230,6 @@
     box-shadow: 0 0 0 0 rgba(0,0,0,1);
     -moz-box-shadow: 0 0 0 0 rgba(0,0,0,1);
     -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,1);
-    position: fixed!important;
-    display: block;
     display: block;
 }
 
@@ -312,8 +309,6 @@
 .mainImage55 {
     left: 29px;
     top: 21px;
-    width: 100px;
-    height: 40px;
     border-width: 0;
     border-color: #000;
     border-style: solid;
@@ -322,7 +317,7 @@
     box-shadow: 0 0 0 0 rgba(0,0,0,1);
     -moz-box-shadow: 0 0 0 0 rgba(0,0,0,1);
     -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,1);
-    position: fixed;
+    position: relative;
     overflow: hidden;
     display: block;
 }
@@ -349,7 +344,7 @@
     box-shadow: 0 0 0 0 rgba(0,0,0,1);
     -moz-box-shadow: 0 0 0 0 rgba(0,0,0,1);
     -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,1);
-    position: fixed;
+    /*position: fixed;*/
     overflow: hidden;
     display: block;
 }
