@@ -1953,7 +1953,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-h2 {
+.documentation-section h2 {
     font-family: Oswald;
     font-weight: 300;
     color: #549fad;
