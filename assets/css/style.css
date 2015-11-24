@@ -2077,3 +2077,12 @@ code span {
     font-family: inherit;
     font-weight: bold;
 }
+
+pre {
+    margin-bottom: -2em;
+    padding-bottom: 0em;
+}
+
+code.hljs {
+    padding-bottom: 1em;
+}
