@@ -8,10 +8,10 @@
 
 <p>That will return with the list of available insights, including Classification:</p>
 
-{% include /source/json/insights_r4.html %}
+{% include /source/json/insights_r4.md %}
 
 <p>The most important part of this payload is the 'href' of the 'insight:classification' key. By retrieving the contents of that URI, Clarify will give you the dominant language detected in the audio track(s).</p>
 
-{% include /source/json/insight-data-classification.html %}
+{% include /source/json/insight-data-classification.md %}
 
 <p>From there, you can use this information for tagging, organization, or to do informed searches as in the next section.</p>

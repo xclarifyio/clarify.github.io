@@ -19,7 +19,7 @@ order: 6
 
 <p>After creating a bundle, you'll receive a response which looks something like this:</p>
 
-{% include /source/json/bundle_callback.html %}
+{% include /source/json/bundle_callback.md %}
 
 <h3>Getting your Transcript</h3>
 <p>The most important part of the bundle notification is the 'href' of the 'clarify:insights' key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.</p>
@@ -28,7 +28,7 @@ order: 6
 
 <p>This will return with the list of available insights:</p>
 
-{% include /source/json/insights_r4.html %}
+{% include /source/json/insights_r4.md %}
 
 <p>The most important part of this payload is the 'href' of the 'insight:transcript_r4' key. By retrieving the contents of that URI, Clarify will give you a complete list of the words recognized from the audio.</p>
 
@@ -36,4 +36,4 @@ order: 6
 
 <p>The result of which will be a JSON representation of the transcript as shown below. Based on the number and duration of the audio, there will be anywhere from zero to many 'segments,' each describing one portion of the dialog. As long as speech is found, there will be at least one 'speaker' but they may be many depending on how detection works.</p>
 
-{% include /source/json/transcript_r4.html %}
+{% include /source/json/transcript_r4.md %}

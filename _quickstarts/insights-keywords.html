@@ -17,7 +17,7 @@ order: 3
 
 <p>After creating a bundle, you'll receive a response which looks something like this:</p>
 
-{% include /source/json/bundle_callback.html %}
+{% include /source/json/bundle_callback.md %}
 
 <h3>Getting your Keywords</h3>
 <p>The most important part of the bundle notification is the &#8216;href' of the &#8216;clarify:insights' key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.</p>
@@ -26,7 +26,7 @@ order: 3
 
 <p>This will return with the list of available insights:</p>
 
-{% include /source/json/insights_r4.html %}
+{% include /source/json/insights_r4.md %}
 
 <p>The most important part of this payload is the 'href' of the 'insight:spoken_keywords' key. By retrieving the contents of that URI, Clarify will give you the top 20 keywords recognized from the audio.</p>
 
@@ -34,6 +34,6 @@ order: 3
 
 <p>The final result of which is our list of keywords:</p>
 
-{% include /source/json/insights_keywords.html %}
+{% include /source/json/insights_keywords.md %}
 
 <p>From here, we can process the keywords just like any other JSON array. You may want to use them to perform informed searches, display word clouds, or tag your media. At this point, it's up to you.</p>

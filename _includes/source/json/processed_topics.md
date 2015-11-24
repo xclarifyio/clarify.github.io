@@ -1,5 +1,4 @@
-<pre>
-<code class="json">
+{% highlight json %}
 {
     "name": "Humans"
 }
@@ -9,5 +8,4 @@
 {
     "name": "Spiritualism"
 }
-</code>
-</pre>
+{% endhighlight %}

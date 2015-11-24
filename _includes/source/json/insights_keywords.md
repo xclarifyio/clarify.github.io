@@ -1,5 +1,4 @@
-<pre>
-<code class="json">
+{% highlight json %}
 {
     "bundle_id": "abcde12345",
     "created": "2015-05-16T20:39:37.507Z",
@@ -54,5 +53,4 @@
         }
     }
 }
-</code>
-</pre>
+{% endhighlight %}

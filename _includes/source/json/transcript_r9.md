@@ -1,5 +1,4 @@
-<pre>
-<code class="json">
+{% highlight json %}
 {
     "id": "98765abcde",
     "bundle_id": "abcde12345",
@@ -121,5 +120,4 @@
         }
     }
 }
-</code>
-</pre>
+{% endhighlight %}

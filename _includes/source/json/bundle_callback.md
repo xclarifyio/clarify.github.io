@@ -1,5 +1,4 @@
-<pre>
-<code class="json">
+{% highlight json %}
 {
     "id":"abcde12345",
     "_class":"Ref",
@@ -25,5 +24,4 @@
         }
     }
 }
-</code>
-</pre>
+{% endhighlight %}

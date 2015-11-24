@@ -3,5 +3,5 @@ curl --data "media_url=http://media.clarify.io/audio/books/dorothyandthewizardin
      --data "notify_url=http://example.org/sample-receiver" \
      --data "name=Dorothy and the Wizard of Oz" https://api.clarify.io/v1/bundles \
      --header "Authorization: Bearer myapikey" | jq '.'
-    # The jq portion is optional and just used to pretty print the resulting json
+# The jq portion is optional and just used to pretty print the resulting json
 {% endhighlight %}

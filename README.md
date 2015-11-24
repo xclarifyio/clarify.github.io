@@ -24,6 +24,9 @@ This is the repository for all the documentation for the Clarify.io API which is
   * Implement Node for everything
   * Implement C# for everything
   * Rename includes to be easier to predict
+  * Add the bundle callback to the basic search quickstart
+  * Replace the "processed" search results with the raw json
+  * Add keyword processing to that quickstart
 * Formatting
   * Make it so that things outside paragraphs are formatted correctly
   * Remove the paragraphs
@@ -35,7 +38,7 @@ This is the repository for all the documentation for the Clarify.io API which is
   * Expand the margin between the code samples and the next paragraph/text
   * Convert back to the default syntax highlighting where possible
 * Use front matter better
-  * Tag things that are in ~~beta~~, ~~invite-only~~, or are non-standard
+  * ~~Tag things that are in beta and invite-only~~
   * Simplify the layouts themselves
   * ~~Add quickstarts to sidebar via a collection~~
 * Move media list out of WordPress

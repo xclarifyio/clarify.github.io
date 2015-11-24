@@ -8,12 +8,24 @@
         <li>curl</li>
     </ul>
     <div class="resp-tabs-container request-transcript-tabs">
-        {% include /source/curl/transcript-order.html %}
+        {% include /source/curl/transcript-order.md %}
     </div>
 </div>
 
+<script>
+    $(document).ready(function() {
+        $('#request-transcript-tabs').easyResponsiveTabs({
+            tabidentify: 'request-transcript-tabs', // The tab groups identifier
+            activetab_bg: '#fff', // background color for active tabs in this group
+            inactive_bg: '#F5F5F5', // background color for inactive tabs in this group
+            active_border_color: '#c1c1c1', // border color for active tabs heads in this group
+            active_content_border_color: '#5AB1D0' // border color for active tabs contect in this group so that it matches the tab head border
+        });
+    });
+</script>
+
 <p>This will return JSON with the status of the request:</p>
 
-{% include /source/json/transcript_status.html %}
+{% include /source/json/transcript_status.md %}
 
 {% include /message-transcripts.html %}

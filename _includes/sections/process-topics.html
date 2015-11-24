@@ -2,14 +2,14 @@
 
 <div id="process-topics-tabs">
     <ul class="resp-tabs-list process-topics-tabs">
-        <li>curl</li>
+        {% for language in page.languages %}
+        <li>{{ language }}</li>
+        {% endfor %}
     </ul>
     <div class="resp-tabs-container process-topics-tabs">
-        <div>
-            <pre>
-                {% include /source/curl/process-topics.html %}
-            </pre>
-        </div>
+        {% for language in page.languages %}
+        <div>{% include /source/curl/process-topics.md %}</div>
+        {% endfor %}
     </div>
 </div>
 

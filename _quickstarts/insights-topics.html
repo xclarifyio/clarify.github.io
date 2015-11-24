@@ -18,7 +18,7 @@ status: beta
 
 <p>After creating a bundle, you'll receive a response which looks something like this:</p>
 
-{% include /source/json/bundle_callback.html %}
+{% include /source/json/bundle_callback.md %}
 
 <h3>Getting your Topics</h3>
 
@@ -28,7 +28,7 @@ status: beta
 
 <p>This will return with the list of available insights:</p>
 
-{% include /source/json/insights_r4.html %}
+{% include /source/json/insights_r4.md %}
 
 <p>The most important part of this payload is the <strong>href</strong> of the <strong>insight:spoken_topics</strong> key. By retrieving the contents of that URI, Clarify will give you the topics recognized from the audio.</p>
 
@@ -36,7 +36,7 @@ status: beta
 
 <p>The final result of which is our list of topics:</p>
 
-{% include /source/json/insights_topics.html %}
+{% include /source/json/insights_topics.md %}
 
 <p>From here, we can process the topics just like any other json array:</p>
 
@@ -44,4 +44,4 @@ status: beta
 
 <p>And we end up with a list of topics that we can use to categorize or otherwise sort our content for better understanding:</p>
 
-{% include /source/json/processed_topics.html %}
+{% include /source/json/processed_topics.md %}

@@ -1,5 +1,4 @@
-<pre>
-<code class="json">
+{% highlight json %}
 {
     "bundle_id": "abcde12345",
     "name": "Dorothy and the Wizard of Oz",
@@ -35,5 +34,4 @@
         }
     }
 }
-</code>
-</pre>
+{% endhighlight %}
