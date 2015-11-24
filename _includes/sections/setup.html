@@ -11,7 +11,7 @@
     </ul>
     <div class="resp-tabs-container setup-tabs">
         {% for language in page.languages %}
-            {% include /source/{{language | downcase}}/setup.html %}
+            {% include /source/{{language | slugify}}/setup.html %}
         {% endfor %}
     </div>
 </div>

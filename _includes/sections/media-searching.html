@@ -13,7 +13,7 @@
     </ul>
     <div class="resp-tabs-container searching-tabs">
         {% for language in page.languages %}
-        {% include /source/{{language | downcase}}/media-searching.html %}
+        {% include /source/{{language | slugify}}/media-searching.html %}
         {% endfor %}
     </div>
 </div>

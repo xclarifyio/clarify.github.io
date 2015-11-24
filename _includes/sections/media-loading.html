@@ -11,7 +11,7 @@
     </ul>
     <div class="resp-tabs-container media-loading-tabs">
         {% for language in page.languages %}
-        {% include /source/{{language | downcase}}/media-loading.html %}
+        {% include /source/{{language | slugify}}/media-loading.html %}
         {% endfor %}
     </div>
 </div>
