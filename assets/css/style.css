@@ -2062,3 +2062,18 @@ hr {
 code span {
     color: inherit;
 }
+
+.beta, .invite {
+    background-color: lightgray;
+    font-family: monospace;
+    font-size: medium;
+    font-style: italic;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+.beta a, .invite a {
+    font-family: inherit;
+    font-weight: bold;
+}

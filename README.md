@@ -14,7 +14,7 @@ This is the repository for all the documentation for the Clarify.io API which is
 * Convert the swagger iframe to actual docs
 * Insights & Reports
   * Spoken Words Report
-  * Topics Insight (beta)
+  * ~~Topics Insight (beta)~~
   * Closed Captioning (beta)
 * Code samples
   * Implement PHP for everything
@@ -34,8 +34,11 @@ This is the repository for all the documentation for the Clarify.io API which is
   * Simplify includes to minimize duplication
   * Fix the header/footer margin around the code samples
   * Expand the margin between the code samples and the next paragraph/text
+  * Convert back to the default syntax highlighting where possible
 * Use front matter better
-  * Tag things that are in beta, need support, or are non-standard
+  * Tag things that are in ~~beta~~, ~~invite-only~~, or are non-standard
+  * Simplify the layouts themselves
+  * Add quickstarts to sidebar via a collection
 * Move media list out of WordPress
 
 ## Contributing
