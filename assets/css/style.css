@@ -2063,7 +2063,7 @@ code span {
     color: inherit;
 }
 
-.beta, .invite {
+.beta, .invite, .notice {
     background-color: antiquewhite;
     font-family: monospace;
     font-size: medium;
@@ -2073,7 +2073,7 @@ code span {
     width: 90%;
 }
 
-.beta a, .invite a {
+.beta a, .invite a, .notice a {
     font-family: inherit;
     font-weight: bold;
 }
