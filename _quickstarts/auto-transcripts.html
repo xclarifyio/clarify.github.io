@@ -1,7 +1,7 @@
 ---
 layout: quickstart
-title: Using the Auto Transcription API
-navtitle: Automatic Transcripts
+title: Getting Automatic Transcriptions
+navtitle: Automatic Transcriptions
 
 languages:
 - curl
@@ -12,8 +12,6 @@ order: 6
 ---
 
 <p>This quickstart demonstrates how to load an audio file and request a transcript in just a matter of minutes.</p>
-
-{% include /message-invite.html %}
 
 {% include /sections/setup.html %}
 
@@ -39,5 +37,3 @@ order: 6
 <p>The result of which will be a JSON representation of the transcript as shown below. Based on the number and duration of the audio, there will be anywhere from zero to many 'segments,' each describing one portion of the dialog. As long as speech is found, there will be at least one 'speaker' but they may be many depending on how detection works.</p>
 
 {% include /source/json/transcript_r4.html %}
-
-{% include /message-invite.html %}
