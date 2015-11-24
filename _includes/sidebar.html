@@ -8,11 +8,10 @@
                 <li class="menu-item"><a href="/libraries/">Libraries/SDKs</a></li>
                 <li class="menu-item"><a href="/quickstarts/">Quickstarts</a>
                     <ul class="sub-menu">
-                        <li class="menu-item"><a href="/quickstarts/media-search.html">Media Search</a></li>
-                        <li class="menu-item"><a href="/quickstarts/multi-language-support.html">Multi-Language Support</a></li>
-                        <li class="menu-item"><a href="/quickstarts/keyword-insight.html">Keywords Insight</a></li>
-                        <li class="menu-item"><a href="/quickstarts/topics-insight.html">Topics Insight</a></li>
-                        <li class="menu-item"><a href="/quickstarts/human-transcripts.html">Human Transcripts</a></li>
+                        {% assign items = site.quickstarts | sort: 'order' %}
+                        {% for item in items %}
+                        <li class="menu-item"><a href="{{ item.url }}">{{ item.navtitle }}</a></li>
+                        {% endfor %}
                     </ul>
                 </li>
             </ul>

@@ -37,7 +37,7 @@ This is the repository for all the documentation for the Clarify.io API which is
 * Use front matter better
   * Tag things that are in ~~beta~~, ~~invite-only~~, or are non-standard
   * Simplify the layouts themselves
-  * Add quickstarts to sidebar via a collection
+  * ~~Add quickstarts to sidebar via a collection~~
 * Move media list out of WordPress
 
 ## Contributing

@@ -3,3 +3,7 @@ title: Clarify Documentation Site
 
 # Exclude our ruby stuff
 exclude: [Gemfile, Gemfile.lock, README.md]
+
+collections:
+  quickstarts:
+    output: true
