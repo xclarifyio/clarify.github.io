@@ -13,15 +13,30 @@ This is the repository for all the documentation for the Clarify.io API which is
 * Add a directory of callback formats
 * Convert the swagger iframe to actual docs
 * Insights & Reports
- * Spoken Words Report
- * Topics Insight (beta)
+  * Spoken Words Report
+  * Topics Insight (beta)
+  * Closed Captioning (beta)
 * Code samples
- * Implement PHP for everything
- * Implement Python for everything
- * Implement Java for everything
- * Implement Ruby for everything
- * Implement Node for everything
- * Implement C# for everything
+  * Implement PHP for everything
+  * Implement Python for everything
+  * Implement Java for everything
+  * Implement Ruby for everything
+  * Implement Node for everything
+  * Implement C# for everything
+  * Rename includes to be easier to predict
+* Formatting
+  * Make it so that things outside paragraphs are formatted correctly
+  * Remove the paragraphs
+  * Kill some of the stupid CSS
+  * Review spacing for all the code samples
+  * Improve the formatting of inline code/words to stand out better
+  * Make sure links open in the right windows
+  * Simplify includes to minimize duplication
+  * Fix the header/footer margin around the code samples
+  * Expand the margin between the code samples and the next paragraph/text
+* Use front matter better
+  * Tag things that are in beta, need support, or are non-standard
+* Move media list out of WordPress
 
 ## Contributing
 
