@@ -27,7 +27,23 @@
                         <section class="container_left">
                             <h1>{{ page.title }}</h1>
 
+                            {% if page.status == 'invite' %}
+                                {% include /message-invite.html %}
+                            {% endif %}
+
+                            {% if page.status == 'beta' %}
+                                {% include /message-beta.html %}
+                            {% endif %}
+
                             {{ content }}
+
+                            {% if page.status == 'beta' %}
+                                {% include /message-beta.html %}
+                            {% endif %}
+
+                            {% if page.status == 'invite' %}
+                                {% include /message-invite.html %}
+                            {% endif %}
                         </section>
                         <aside class="container_right">
                             {% include sidebar.html %}
