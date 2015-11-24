@@ -13,21 +13,23 @@
     </ul>
     <div class="resp-tabs-container searching-tabs">
         {% for language in page.languages %}
-        {% include /source/{{language | slugify}}/media-searching.html %}
+        <div>{% include /source/{{language | slugify}}/media-searching.md %}</div>
         {% endfor %}
     </div>
 </div>
 
 <p>And here are the results using the Wizard of Oz clip we loaded:</p>
 
-<pre><code class="bash">/v1/audio/8ee0e56929c248ba895d19ead47c9993
+{% highlight bash %}
+/v1/audio/8ee0e56929c248ba895d19ead47c9993
 Dorothy and the Wizard of Oz
 2.35 -- 2.59
 172.49 -- 172.83
 224.82 -- 225.08
 271.49 -- 271.8
 329.1 -- 329.31
-480.45 -- 480.92</code></pre>
+480.45 -- 480.92
+{% endhighlight %}
 
 <p><strong>Note:</strong> Your search results for this clip might be slightly different as our systems use machine learning and get better all the time.</p>
 

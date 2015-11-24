@@ -1,6 +1,4 @@
-<div>
-    <pre>
-<code class="python">
+{% highlight python %}
 from clarify_python import clarify
 
 client = clarify.Client('my api key')
@@ -17,6 +15,4 @@ for item in items:
     search_hits = results[index]['term_results'][0]['matches'][1]['hits']
     for search_hit in search_hits:
         print(str(search_hit['start']) + ' -- ' + str(search_hit['end']))
-</code>
-    </pre>
-</div>
+{% endhighlight %}

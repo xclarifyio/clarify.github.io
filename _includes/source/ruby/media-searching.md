@@ -1,6 +1,4 @@
-<div>
-    <pre>
-<code class="ruby">
+{% highlight ruby %}
 require 'clarify'
 
 clarify = Clarify::Client.new(api_key: 'docs-api-key')
@@ -21,6 +19,4 @@ results.each do |bundle_results, bundle_url|
         end
     end
 end
-</code>
-    </pre>
-</div>
+{% endhighlight %}

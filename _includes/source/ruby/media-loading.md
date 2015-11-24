@@ -1,6 +1,4 @@
-<div>
-    <pre>
-<code class="ruby">
+{% highlight ruby %}
 require 'clarify'
 require 'pp'
 
@@ -13,6 +11,4 @@ created_bundle = clarify.bundles.create!(
 )
 
 pp created_bundle
-</code>
-    </pre>
-</div>
+{% endhighlight %}

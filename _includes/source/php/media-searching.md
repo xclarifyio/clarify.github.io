@@ -1,7 +1,5 @@
-<div>
-    <pre>
-<code class="php">
-&lt;?php
+{% highlight php %}
+<?php
 
 require '../vendor/autoload.php';
 
@@ -21,6 +19,4 @@ foreach ($items as $index => $item) {
         echo $search_hit['start'] . ' -- ' . $search_hit['end'] . "\n";
     }
 }
-</code>
-    </pre>
-</div>
+{% endhighlight %}

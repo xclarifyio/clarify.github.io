@@ -1,6 +1,4 @@
-<div>
-    <pre>
-<code class="java">
+{% highlight java %}
 import io.clarify.api.*;
 import java.net.URI;
 
@@ -19,6 +17,4 @@ public class App {
         System.out.println(bundle.id());
     }
 }
-</code>
-    </pre>
-</div>
+{% endhighlight %}

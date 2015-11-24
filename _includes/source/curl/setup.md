@@ -1,0 +1,1 @@
+Although we don't have a curl library, the command-line JSON parser 'jq' is super helpful. Download and install it to get started: <a href="http://stedolan.github.io/jq/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'http://stedolan.github.io/jq/', 'http://stedolan.github.io/jq/']);" target="_new">http://stedolan.github.io/jq/</a>
