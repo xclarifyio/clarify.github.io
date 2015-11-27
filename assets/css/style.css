@@ -1347,6 +1347,13 @@ p, label, li {
     line-height: 22px;
 }
 
+.container_left {
+    color: #555;
+    margin: 7px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 .menu {
     font-family: arial, sans-serif;
     position: absolute;
@@ -1944,7 +1951,7 @@ h1 {
     text-transform: uppercase;
     text-decoration: none;
     direction: ltr;
-    margin-top: 25px;
+    margin-top: 35px;
     margin-bottom: 10px;
 }
 
@@ -2079,5 +2086,10 @@ code span {
 }
 
 code.hljs {
+    font-size: initial;
     padding: 12px;
+}
+
+.resp-tab-content {
+    font-size: 95%;
 }

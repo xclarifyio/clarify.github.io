@@ -9,31 +9,32 @@ languages:
 order: 3
 ---
 
-<p>This quickstart demonstrates how to load an audio file and request your spoken keywords in just a matter of minutes.</p>
+This quickstart demonstrates how to load an audio file and request your spoken keywords in just a matter of minutes.
 
 {% include /sections/setup.html %}
 
 {% include /sections/media-loading.html %}
 
-<p>After creating a bundle, you'll receive a response which looks something like this:</p>
+After creating a bundle, you'll receive a response which looks something like this:
 
 {% include /source/json/bundle_callback.md %}
 
 <h3>Getting your Keywords</h3>
-<p>The most important part of the bundle notification is the &#8216;href' of the &#8216;clarify:insights' key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.</p>
+
+The most important part of the bundle notification is the &#8216;href' of the &#8216;clarify:insights' key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.
 
 {% include /sections/insight-links.html %}
 
-<p>This will return with the list of available insights:</p>
+This will return with the list of available insights:
 
 {% include /source/json/insights_r4.md %}
 
-<p>The most important part of this payload is the 'href' of the 'insight:spoken_keywords' key. By retrieving the contents of that URI, Clarify will give you the top 20 keywords recognized from the audio.</p>
+The most important part of this payload is the 'href' of the 'insight:spoken_keywords' key. By retrieving the contents of that URI, Clarify will give you the top 20 keywords recognized from the audio.
 
 {% include /sections/keyword-request.html %}
 
-<p>The final result of which is our list of keywords:</p>
+The final result of which is our list of keywords:
 
 {% include /source/json/insights_keywords.md %}
 
-<p>From here, we can process the keywords just like any other JSON array. You may want to use them to perform informed searches, display word clouds, or tag your media. At this point, it's up to you.</p>
+From here, we can process the keywords just like any other JSON array. You may want to use them to perform informed searches, display word clouds, or tag your media. At this point, it's up to you.
