@@ -2,6 +2,17 @@
 
 This is the repository for all the documentation for the Clarify.io API which is currently at docs.github.io.
 
+## Adding a Quickstart
+
+1. Create a file in the _quickstarts folder for the Quickstart you plan to write
+  * Make sure to set the 'languages' array, that determines which tabs appear for the code samples
+  * Make sure to set the 'navtitle' and 'order' values, those determine the link and its order in the sidebar navigation
+1. Include the sections which you need from the _includes/sections folder
+1. Anytime you want to include a code sample, create a variable called 'tabs' with the name of your samples and include /structural/tabs.html
+  * Whatever string you use for the 'tabs' variable should be the name of your code samples.
+    * For example, if 'tabs' equals 'monkey' then your PHP sample would be in _includes/source/php/monkey.md while the curl example would be _includes/source/curl/monkey.md
+  * Once you have all the samples you want in whatever language, simply add that language to the 'languages' array in the Quickstart front matter.
+    * Make sure that you have **all** the samples for a given language before you turn it on. Otherwise the includes will fail and Jekyll won't update the pages.
 
 ## Todo list
 
@@ -41,6 +52,7 @@ This is the repository for all the documentation for the Clarify.io API which is
   * ~~Tag things that are in beta and invite-only~~
   * Simplify the layouts themselves
   * ~~Add quickstarts to sidebar via a collection~~
+  * Shift messages into a subfolder
 * Move media list out of WordPress
 
 ## Contributing
