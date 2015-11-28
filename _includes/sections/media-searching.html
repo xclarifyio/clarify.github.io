@@ -1,22 +1,18 @@
-<a name="searching"></a>
+{% assign tabs="media-searching" %}
+
+<a name="{{ tabs }}"></a>
 
 <h3>Searching Audio</h3>
-<p><em><strong>Note:</strong> While we process files as we receive them, there will be a delay before your file is available for searching. This is normally 1 minute for every minute of audio/video.</em></p>
+
+<div class="notice">
+    <strong>Note:</strong> While we process files as we receive them, there will be a delay before your file is available for searching. This is normally 1 minute for every minute of audio/video.
+</div>
+
 <p>To search, you use the same object you created before and just search using your keywords. If you uploaded the “Wizard of Oz” audio clip, you can search for “dorothy”. Then you can process and interact the results however you wish.</p>
+
 <p>The code below simply shows the resulting bundle id, bundle name, and the start/end offsets for each occurrence of the search terms:</p>
 
-<div id="searching-tabs">
-    <ul class="resp-tabs-list searching-tabs">
-        {% for language in page.languages %}
-        <li>{{ language }}</li>
-        {% endfor %}
-    </ul>
-    <div class="resp-tabs-container searching-tabs">
-        {% for language in page.languages %}
-        <div>{% include /source/{{language | slugify}}/media-searching.md %}</div>
-        {% endfor %}
-    </div>
-</div>
+{% include /structural/tabs.html %}
 
 <p>And here are the results using the Wizard of Oz clip we loaded:</p>
 
@@ -31,12 +27,6 @@ Dorothy and the Wizard of Oz
 480.45 -- 480.92
 {% endhighlight %}
 
-<p><strong>Note:</strong> Your search results for this clip might be slightly different as our systems use machine learning and get better all the time.</p>
-
-<script>
-    $(document).ready(function() {
-        $('#searching-tabs').easyResponsiveTabs({
-            tabidentify: 'searching-tabs'
-        });
-    });
-</script>
+<div class="notice">
+    <strong>Note:</strong> Your search results for this clip might be slightly different as our systems use machine learning and get better all the time.
+</div>

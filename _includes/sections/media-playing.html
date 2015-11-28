@@ -1,23 +1,26 @@
-<a name="playing"></a>
+{% assign tabs="media-playing" %}
+
+<a name="{{ tabs }}"></a>
 
 <h3>Putting it All Together</h3>
+
 <p>From here, we can visualize our search results with our included <a href="https://github.com/Clarify/clarify-audio-player" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-audio-player', 'audio player']);" >audio player</a>. The player should work with minimal additional configuration, but the bulk of the logic is already above in the results.</p>
 
-<div id="player-tabs">
-    <ul class="resp-tabs-list player-tabs">
+<div id="{{ tabs }}">
+    <ul class="resp-tabs-list {{ tabs }}">
         <li>PHP</li>
         <li>Python</li>
     </ul>
-    <div class="resp-tabs-container player-tabs">
-        <div>{% include /source/php/media-playing.md %}</div>
-        <div>{% include /source/python/media-playing.md %}</div>
+    <div class="resp-tabs-container {{ tabs }}">
+        <div>{% include /source/php/{{ tabs }}.md %}</div>
+        <div>{% include /source/python/{{ tabs }}.md %}</div>
     </div>
 </div>
 
 <script>
     $(document).ready(function() {
-        $('#player-tabs').easyResponsiveTabs({
-            tabidentify: 'player-tabs'
+        $('#{{ tabs }}').easyResponsiveTabs({
+            tabidentify: '{{ tabs }}'
         });
     });
 </script>
