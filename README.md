@@ -2,6 +2,8 @@
 
 This is the repository for all the documentation for the Clarify.io API which is currently at docs.github.io.
 
+While this is the current version of our documentation, it was not the first. Check out [An Evolution on Documentation](http://clarify.io/blog/an-evolution-in-documentation/) to understand some of our how and why we got here.
+
 ## Adding a Quickstart
 
 1. Create a file in the _quickstarts folder for the Quickstart you plan to write
