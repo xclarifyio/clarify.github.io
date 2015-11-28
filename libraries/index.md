@@ -9,13 +9,13 @@ title: Libraries and SDKs
 
 Use one of our helper libraries to use Clarify in your language of choice:
 
-* <a href="https://github.com/Clarify/clarify-php" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-php', 'clarify-php']);" title="Clarify PHP Library">clarify-php</a> &mdash; Requires PHP 5.3+, installed via Composer
-* <a href="https://github.com/Clarify/clarify_python_2" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify_python_2', 'clarify-python 2']);" title="Clarify Python Library">clarify-python 2</a> &mdash; Requires Python 2.x, installed via Pip
-* <a href="https://github.com/Clarify/clarify_python" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify_python', 'clarify-python 3']);" title="Clarify Python Library">clarify-python 3</a> &mdash; Requires Python 3.x, installed via Pip
-* <a href="https://github.com/Clarify/clarify-java" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-java', 'clarify-java']);" title="Clarify Java Library">clarify-java</a> &mdash; Requires Java 1.6+, installed via Maven
-* <a href="https://github.com/Clarify/clarify-ruby" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-ruby', 'clarify-ruby']);" >clarify-ruby</a> &mdash; Requires Ruby 2.0+, installed via Ruby gems
-* <a href="https://github.com/Clarify/clarify-csharp" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-csharp', 'clarify-csharp']);" title="Clarify C-Sharp Library">clarify-csharp</a> &mdash; Requires .Net 4.x, installed via Nuget
-* <a href="https://github.com/Clarify/clarify-curl" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify/clarify-curl', 'curl examples']);" >curl examples</a>
+* [clarify-php](https://github.com/Clarify/clarify-php) &mdash; Requires PHP 5.3+, installed via Composer
+* [clarify-python 2](https://github.com/Clarify/clarify_python_2) &mdash; Requires Python 2.x, installed via Pip
+* [clarify-python 3](https://github.com/Clarify/clarify_python) &mdash; Requires Python 3.x, installed via Pip
+* [clarify-java](https://github.com/Clarify/clarify-java) &mdash; Requires Java 1.6+, installed via Maven
+* [clarify-ruby](https://github.com/Clarify/clarify-ruby) &mdash; Requires Ruby 2.0+, installed via Ruby gems
+* [clarify-csharp](https://github.com/Clarify/clarify-csharp) &mdash; Requires .Net 4.x, installed via Nuget
+* [curl examples](https://github.com/Clarify/clarify.github.io/tree/master/_includes/source/curl)
 
 It's dangerous to go alone. The helper libraries handle authentication, the HTTP aspects, and even wrap commonly needed functionality in language-specific constructs. You can focus on your app.
 
