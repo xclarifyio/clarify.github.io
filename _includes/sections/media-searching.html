@@ -4,9 +4,7 @@
 
 <h3>Searching Audio</h3>
 
-<div class="notice">
-    <strong>Note:</strong> While we process files as we receive them, there will be a delay before your file is available for searching. This is normally 1 minute for every minute of audio/video.
-</div>
+{% include /messages/delay.html %}
 
 <p>To search, you use the same object you created before and just search using your keywords. If you uploaded the “Wizard of Oz” audio clip, you can search for “dorothy”. Then you can process and interact the results however you wish.</p>
 
@@ -27,6 +25,4 @@ Dorothy and the Wizard of Oz
 480.45 -- 480.92
 {% endhighlight %}
 
-<div class="notice">
-    <strong>Note:</strong> Your search results for this clip might be slightly different as our systems use machine learning and get better all the time.
-</div>
+{% include /messages/machine-learning.html %}

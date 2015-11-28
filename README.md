@@ -52,7 +52,7 @@ This is the repository for all the documentation for the Clarify.io API which is
   * ~~Tag things that are in beta and invite-only~~
   * Simplify the layouts themselves
   * ~~Add quickstarts to sidebar via a collection~~
-  * Shift messages into a subfolder
+  * ~~Shift messages into a subfolder~~
 * Move media list out of WordPress
 
 ## Contributing

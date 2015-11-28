@@ -30,21 +30,21 @@
                             <hr />
 
                             {% if page.status == 'invite' %}
-                                {% include /message-invite.html %}
+                                {% include /messages/invite.html %}
                             {% endif %}
 
                             {% if page.status == 'beta' %}
-                                {% include /message-beta.html %}
+                                {% include /messages/beta.html %}
                             {% endif %}
 
                             {{ content }}
 
                             {% if page.status == 'beta' %}
-                                {% include /message-beta.html %}
+                                {% include /messages/beta.html %}
                             {% endif %}
 
                             {% if page.status == 'invite' %}
-                                {% include /message-invite.html %}
+                                {% include /messages/invite.html %}
                             {% endif %}
                         </section>
                         <aside class="container_right">

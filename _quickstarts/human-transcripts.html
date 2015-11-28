@@ -9,7 +9,7 @@ languages:
 order: 5
 ---
 
-{% include /message-transcripts.html %}
+{% include /messages/humans.html %}
 
 This quickstart demonstrates how to load an audio file and request a transcript in just a matter of minutes.
 
@@ -24,10 +24,6 @@ This quickstart demonstrates how to load an audio file and request a transcript 
 This is where the notify_url becomes important again. Just as we perform a callback once the indexing is complete, we also make a request once the transcript is ready. Here are the contents of that payload:
 
 {% include /source/json/transcript_callback.md %}
-
-<div class="invite">
-    <strong>Note:</strong> For security purposes we do not provide the transcript in the callback but we give you the URI necessary to make an authenticated request of your own.
-</div>
 
 {% assign tabs="request-transcript2" %}
 
