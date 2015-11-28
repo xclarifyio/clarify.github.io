@@ -35,7 +35,7 @@ This is the repository for all the documentation for the Clarify.io API which is
   * Make sure links open in the right windows
   * Simplify includes to minimize duplication
   * ~~Fix the header/footer margin around the code samples~~
-  * Expand the margin between the code samples and the next paragraph/text
+  * ~~Expand the margin between the code samples and the next paragraph/text~~
   * ~~Convert back to the default syntax highlighting where possible~~
 * Use front matter better
   * ~~Tag things that are in beta and invite-only~~
