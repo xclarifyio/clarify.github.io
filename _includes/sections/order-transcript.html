@@ -1,0 +1,15 @@
+{% assign tabs="order-transcript" %}
+
+<a name="{{ tabs }}"></a>
+
+<h3>Ordering a Transcript</h3>
+
+<p>The most important part is the 'href' of the 'clarify:insights' key. By making an HTTP POST to that URI, Clarify will start processing the audio to create the transcript.</p>
+
+{% include /structural/tabs.html %}
+
+<p>This will return JSON with the status of the request:</p>
+
+{% include /source/json/transcript_status.md %}
+
+{% include /message-transcripts.html %}
