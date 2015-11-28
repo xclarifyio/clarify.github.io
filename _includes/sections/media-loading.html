@@ -3,6 +3,7 @@
 <a name="{{ tabs }}"></a>
 
 <h3>Loading Audio</h3>
+
 <p>First include the SDK and create your object using your API Key. Once you&#8217;ve created the object, you can use the object to load each of your audio files as shown:</p>
 
 {% include /structural/tabs.html %}
@@ -12,3 +13,7 @@
 <div class="notice">
     <strong>Note:</strong> You don't have to download these files. Instead you can pass us these urls via the create/POST method shown above.
 </div>
+
+After creating a bundle, you'll receive a response which looks something like this:
+
+{% include /source/json/bundle_callback.md %}

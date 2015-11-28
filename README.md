@@ -24,7 +24,7 @@ This is the repository for all the documentation for the Clarify.io API which is
   * Implement Node for everything
   * Implement C# for everything
   * Rename includes to be easier to predict
-  * Add the bundle callback to the basic search quickstart
+  * ~~Add the bundle callback to the basic search quickstart~~
   * Replace the "processed" search results with the raw json
   * Add keyword processing to that quickstart
 * Formatting
