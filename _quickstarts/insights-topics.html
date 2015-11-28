@@ -16,23 +16,27 @@ This quickstart demonstrates how to load an audio or video file and request your
 
 {% include /sections/media-loading.html %}
 
-After creating a bundle, you'll receive a response which looks something like this:
+{% assign tabs="insight-links" %}
 
-{% include /source/json/bundle_callback.md %}
+<a name="{{ tabs }}"></a>
 
 <h3>Getting your Topics</h3>
 
-The most important part of the bundle notification is the &#8216;href' of the &#8216;clarify:insights' key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.
+The most important part of the bundle notification is the 'href' of the 'clarify:insights' key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.
 
-{% include /sections/insight-links.html %}
+{% include /structural/tabs.html %}
 
 This will return with the list of available insights:
 
 {% include /source/json/insights_r4.md %}
 
-The most important part of this payload is the <strong>href</strong> of the <strong>insight:spoken_topics</strong> key. By retrieving the contents of that URI, Clarify will give you the topics recognized from the audio.
+The most important part of this payload is the 'href' of the 'insight:spoken_topics' key. By retrieving the contents of that URI, Clarify will give you the topics recognized from the audio.
 
-{% include /sections/request-topics.html %}
+{% assign tabs="request-topics" %}
+
+<a name="{{ tabs }}"></a>
+
+{% include /structural/tabs.html %}
 
 The final result of which is our list of topics:
 
@@ -40,7 +44,11 @@ The final result of which is our list of topics:
 
 From here, we can process the topics just like any other json array:
 
-{% include /sections/process-topics.html %}
+{% assign tabs="process-topics" %}
+
+<a name="{{ tabs }}"></a>
+
+{% include /structural/tabs.html %}
 
 And we end up with a list of topics that we can use to categorize or otherwise sort our content for better understanding:
 
