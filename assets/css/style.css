@@ -2093,3 +2093,8 @@ code.hljs {
 .resp-tab-content {
     font-size: 90%;
 }
+
+code {
+    background-color: antiquewhite;
+    padding: 3px;
+}

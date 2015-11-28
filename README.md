@@ -42,15 +42,14 @@ This is the repository for all the documentation for the Clarify.io API which is
   * ~~Make it so that things outside paragraphs are formatted correctly~~
   * ~~Remove the paragraphs~~
   * Kill some of the stupid CSS
-  * Improve the formatting of inline code/words to stand out better
-  * Make sure links open in the right windows
-  * Simplify includes to minimize duplication
+  * ~~Improve the formatting of inline code/words to stand out better~~
+  * ~~Make sure links open in the right windows~~
+  * ~~Simplify includes to minimize duplication~~
   * ~~Fix the header/footer margin around the code samples~~
   * ~~Expand the margin between the code samples and the next paragraph/text~~
   * ~~Convert back to the default syntax highlighting where possible~~
 * Use front matter better
   * ~~Tag things that are in beta and invite-only~~
-  * Simplify the layouts themselves
   * ~~Add quickstarts to sidebar via a collection~~
   * ~~Shift messages into a subfolder~~
 * Move media list out of WordPress
