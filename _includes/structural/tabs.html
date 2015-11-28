@@ -1,0 +1,20 @@
+<div id="{{ tabs }}">
+    <ul class="resp-tabs-list {{ tabs }}">
+        {% for language in page.languages %}
+        <li>{{ language }}</li>
+        {% endfor %}
+    </ul>
+    <div class="resp-tabs-container {{ tabs }}">
+        {% for language in page.languages %}
+        <div>{% include /source/{{language | slugify}}/{{ tabs }}.md %}</div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('#{{ tabs }}').easyResponsiveTabs({
+            tabidentify: '{{ tabs }}'
+        });
+    });
+</script>

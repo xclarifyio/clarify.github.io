@@ -1,25 +1,9 @@
-<a name="setup"></a>
+{% assign tabs="setup" %}
+
+<a name="{{ tabs }}"></a>
 
 <h3>Configuring Your Environment</h3>
+
 <p>While you can use any programming language you choose, we provide a few <a href="/libraries/" onclick="_gaq.push(['_trackEvent', 'outbound-article', 'https://github.com/Clarify', 'helper libraries']);" >helper libraries</a> to get you started. In most cases, you can use your favorite package manager:</p>
 
-<div id="setup-tabs">
-    <ul class="resp-tabs-list setup-tabs">
-        {% for language in page.languages %}
-            <li>{{ language }}</li>
-        {% endfor %}
-    </ul>
-    <div class="resp-tabs-container setup-tabs">
-        {% for language in page.languages %}
-        <div>{% include /source/{{language | slugify}}/setup.md %}</div>
-        {% endfor %}
-    </div>
-</div>
-
-<script>
-    $(document).ready(function() {
-        $('#setup-tabs').easyResponsiveTabs({
-            tabidentify: 'setup-tabs'
-        });
-    });
-</script>
+{% include /structural/tabs.html %}

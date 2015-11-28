@@ -1,28 +1,14 @@
-<a name="loading"></a>
+{% assign tabs="media-loading" %}
+
+<a name="{{ tabs }}"></a>
 
 <h3>Loading Audio</h3>
 <p>First include the SDK and create your object using your API Key. Once you&#8217;ve created the object, you can use the object to load each of your audio files as shown:</p>
 
-<div id="media-loading-tabs">
-    <ul class="resp-tabs-list media-loading-tabs">
-        {% for language in page.languages %}
-        <li>{{ language }}</li>
-        {% endfor %}
-    </ul>
-    <div class="resp-tabs-container media-loading-tabs">
-        {% for language in page.languages %}
-        <div>{% include /source/{{language | slugify}}/media-loading.md %}</div>
-        {% endfor %}
-    </div>
-</div>
+{% include /structural/tabs.html %}
 
 <p>Naming the bundle and providing a notify_url are both optional. We have a number of audio and video files available for processing on <a href="http://clarify.io/media">our Media Page</a>.</p>
-<p><em><strong>Hint:</strong> You don&#8217;t have to download these files. Instead you can pass us these urls via the create method shown above.</em></p>
 
-<script>
-    $(document).ready(function() {
-        $('#media-loading-tabs').easyResponsiveTabs({
-            tabidentify: 'media-loading-tabs'
-        });
-    });
-</script>
+<div class="notice">
+    <strong>Note:</strong> You don't have to download these files. Instead you can pass us these urls via the create/POST method shown above.
+</div>
