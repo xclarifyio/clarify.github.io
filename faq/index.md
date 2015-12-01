@@ -11,6 +11,10 @@ title: Frequently Asked Questions
 
 No. In order to process your audio or video, our systems have to download it. Converting a YouTube url into a media url is challenging because they occasionally change how it's generated. We recommend you to use your raw media url directly.
 
+**I got an error. What does it mean!?**
+
+We use the standard HTTP Status Codes along with <a href="/errors/">custom media error codes detailed here</a>.
+
 **What languages do you support?**
 
 English, Spanish, and French though we're working to add more languages. If your language isn't listed, <a href="mailto:support@clarify.io">contact us</a> as we might have your language in a private beta.
