@@ -1924,6 +1924,34 @@ footer {
     left: 660px;
 }
 
+h1 {
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    direction: ltr;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    direction: ltr;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .documentation-section {
     top: 276px;
     width: 300px;
@@ -1941,20 +1969,6 @@ footer {
     display: block;
 }
 
-h1 {
-    font-family: Oswald;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: 3px;
-    font-style: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    direction: ltr;
-    margin-top: 35px;
-    margin-bottom: 10px;
-}
-
 .documentation-section h2 {
     font-family: Oswald;
     font-weight: 300;
@@ -1968,20 +1982,6 @@ h1 {
     text-align: center;
     direction: ltr;
     margin-top: 25px;
-}
-
-h3 {
-    font-family: Oswald;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 3px;
-    font-style: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    direction: ltr;
-    margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 .documentation-section img {
