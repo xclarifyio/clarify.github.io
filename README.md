@@ -1,6 +1,6 @@
 # Clarify's Documentation Pages
 
-This is the repository for all the documentation for the Clarify.io API which is currently at docs.github.io.
+This is the repository for all the documentation for the Clarify.io API which is currently at [docs.clarify.io](http://docs.clarify.io/).
 
 While this is the current version of our documentation, it was not the first. Check out [An Evolution on Documentation](http://clarify.io/blog/an-evolution-in-documentation/) to understand some of our how and why we got here.
 
