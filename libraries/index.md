@@ -21,6 +21,8 @@ It's dangerous to go alone. The helper libraries handle authentication, the HTTP
 
 We provide helper libraries in the languages we use on a regular basis. While we're open to creating and adding more, we want to know which ones you care about. <em><a href="mailto:support@clarify.io">Email us to tell us what you need!</a></em>
 
+Dive into <a href="/quickstarts/">our Quickstarts</a> to explore what is possible with the libraries.
+
 - - -
 
 ### SDK Writing Guide
