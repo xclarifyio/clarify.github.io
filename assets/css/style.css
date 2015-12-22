@@ -1347,6 +1347,18 @@ p, label, li {
     line-height: 22px;
 }
 
+table {
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px #888888;
+    color: #555;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: -15px;
+    padding: 10px;
+    width: 105%;
+}
+
 .container_left {
     color: #555;
     margin: 7px;
