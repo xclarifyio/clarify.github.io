@@ -216,9 +216,9 @@
 }
 
 .mainMenu54 {
-    left: 276px;
+    left: 387px;
     top: 10px;
-    width: 740px;
+    width: 760px;
     height: 50px;
     padding: 0;
     direction: ltr;
@@ -243,9 +243,9 @@
     padding-left: 0;
     padding-bottom: 0;
     padding-right: 0;
-    margin-left: 14px;
+    margin-left: 12px;
     margin-bottom: 0;
-    margin-right: 14px;
+    margin-right: 12px;
     border-width: 0;
     border-color: #ccc;
     border-style: Solid;
@@ -1428,6 +1428,14 @@ table {
     direction: rtl;
     float: none;
     cursor: pointer;
+}
+
+.menu.left.horizontal ul li:last-child {
+    border: white;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 div.text_editor_resets ul, div.text_editor_resets ol {
