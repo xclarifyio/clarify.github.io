@@ -1,27 +1,14 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
-    <head>
-        {% include head.html %}
-    </head>
-    <body>
-        <div>
+{% include head.html %}
 
-            <div class='dataTypeMainPanel mainMainPanel0' data-type='MainPanel'>
-                <div data-id='mainShape24' class='dataTypeShape  mainShape24 mainShape' data-type='Shape' ></div>
-                {% include navigation.html %}
+<div class="layout">
+    <section class="body_container_bottom">
+        <section class="container_left">
+            {{ content }}
+        </section>
+        <aside class="container_right">
+            {% include sidebar.html %}
+        </aside>
+    </section>
+</div>
 
-                <div class="layout">
-                    <section class="body_container_bottom">
-                        <section class="container_left">
-                            {{ content }}
-                        </section>
-                        <aside class="container_right">
-                            {% include sidebar.html %}
-                        </aside>
-                    </section>
-                </div>
-            </div>
-        </div>
-        {% include footer.html %}
-    </body>
-</html>
+{% include footer.html %}
