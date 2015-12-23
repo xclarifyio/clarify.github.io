@@ -1723,7 +1723,7 @@ img.emoji {
 }
 
 .container_full {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .container_left {
@@ -1790,7 +1790,7 @@ article>h1, article h3 {
 .container_right {
     width: 23.5%;
     float: right;
-    padding: 40px 0 0 0;
+    padding: 25px 0 0 0;
 }
 
 ul#menu-documentation-sidebar * a {

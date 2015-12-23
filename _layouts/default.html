@@ -1,14 +1,12 @@
 {% include head.html %}
 
 <div class="layout">
-    <section class="body_container_bottom">
-        <section class="container_left">
-            {{ content }}
-        </section>
-        <aside class="container_right">
-            {% include sidebar.html %}
-        </aside>
+    <section class="container_left">
+        {{ content }}
     </section>
+    <aside class="container_right">
+        {% include sidebar.html %}
+    </aside>
 </div>
 
 {% include footer.html %}

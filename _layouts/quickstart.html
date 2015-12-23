@@ -1,34 +1,32 @@
 {% include head.html %}
 
 <div class="layout">
-    <section class="body_container_bottom">
-        <section class="container_left">
-            <h1>{{ page.title }}</h1>
+    <section class="container_left">
+        <h1>{{ page.title }}</h1>
 
-            <hr />
+        <hr />
 
-            {% if page.status == 'invite' %}
-                {% include /messages/invite.html %}
-            {% endif %}
+        {% if page.status == 'invite' %}
+            {% include /messages/invite.html %}
+        {% endif %}
 
-            {% if page.status == 'beta' %}
-                {% include /messages/beta.html %}
-            {% endif %}
+        {% if page.status == 'beta' %}
+            {% include /messages/beta.html %}
+        {% endif %}
 
-            {{ content }}
+        {{ content }}
 
-            {% if page.status == 'beta' %}
-                {% include /messages/beta.html %}
-            {% endif %}
+        {% if page.status == 'beta' %}
+            {% include /messages/beta.html %}
+        {% endif %}
 
-            {% if page.status == 'invite' %}
-                {% include /messages/invite.html %}
-            {% endif %}
-        </section>
-        <aside class="container_right">
-            {% include sidebar.html %}
-        </aside>
+        {% if page.status == 'invite' %}
+            {% include /messages/invite.html %}
+        {% endif %}
     </section>
+    <aside class="container_right">
+        {% include sidebar.html %}
+    </aside>
 </div>
 
 <link rel="stylesheet" type="text/css" href="/assets/css/easy-responsive-tabs.css" />
