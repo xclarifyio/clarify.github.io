@@ -21,6 +21,19 @@
     padding-top: 60px;
 }
 
+.Buttons-White {
+    font-family: Oswald;
+    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    line-height: 14px;
+    font-style: Normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    direction: ltr;
+}
+
 .container_left a, .container_right a, .Link {
     font-family: Open Sans;
     font-weight: 400;
@@ -112,8 +125,8 @@
 .mainMainContent4 {
     top: 0;
     left: 0;
-    width: 960px;
-    min-height: 382px;
+    width: 550px;
+    min-height: 225px;
     height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -122,6 +135,12 @@
     border-style: solid;
     position: relative;
     display: block;
+}
+
+.mainMainContent4 p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 175px;
 }
 
 .mainMainRow5 {
@@ -1650,7 +1669,7 @@ footer h2 {
 }
 
 .footer-signup {
-    margin-top: 100px;
+    margin-top: 75px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 75px;
@@ -1678,8 +1697,6 @@ footer h2 {
 .backdrop {
     background-color: white;
     width: 100%;
-    position: absolute;
-    top: 208px;
 }
 
 .content-canvas {
@@ -1975,10 +1992,8 @@ h4 {
 }
 
 .documentation-section {
-    top: 276px;
     width: 300px;
     height: 459px;
-    z-index: 6;
     border-width: 3px;
     border-color: #549fad;
     border-style: solid;
@@ -1986,9 +2001,17 @@ h4 {
     box-shadow: 0 0 0 0 rgba(0,0,0,1);
     -moz-box-shadow: 0 0 0 0 rgba(0,0,0,1);
     -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,1);
-    position: absolute;
     overflow: hidden;
     display: block;
+}
+
+.documentation-section:nth-child(1) {
+    float: right;
+}
+
+.documentation-section:nth-child(2) {
+    float: left;
+    margin-right: 20px;
 }
 
 .documentation-section h2 {
