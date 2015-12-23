@@ -3,4 +3,8 @@ layout: fullpage
 title: API Endpoints
 ---
 
+# API Endpoints
+
+- - -
+
 <iframe src="https://api.clarify.io/docs-iframe" width="100%" height="1000" scrolling="yes" frameborder="0"></iframe>
