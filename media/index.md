@@ -7,7 +7,7 @@ title: Sample Media
 
 - - -
 
-The following is a list of audio and video files we have made available for testing and development. The fastest way to get started is drop the URLs below directly into your code and try them out. In most cases, processing will be done in a few seconds.
+The following is a list of audio and video files we have made available for testing and development. The fastest way to get started is drop the URLs below directly into your code and try them out. In most cases, processing will be done in a matter of seconds.
 
 
 ## Audio
