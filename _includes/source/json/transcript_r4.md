@@ -102,7 +102,7 @@
     "_class": "TranscriptR4Insight",
     "_links": {
         "self": {
-            "href": "/v1/bundles/abcde12345/insights/54321edcba"
+            "href": "/v1/bundles/abcde12345/insights/98765abcde"
         },
         "curies": [
             {
