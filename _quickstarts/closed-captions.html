@@ -1,0 +1,57 @@
+---
+layout: quickstart
+title: Getting Closed Captions
+navtitle: Closed Captions
+
+languages:
+- curl
+
+order: 6
+status: beta
+---
+
+{% include /messages/humans.html %}
+
+This quickstart demonstrates how to load a video file and request clsoed captions in just a matter of minutes.
+
+{% include /sections/setup.html %}
+
+{% include /sections/loading-video.html %}
+
+{% include /sections/order-captions.html %}
+
+{% assign tabs="request-insights" %}
+
+<a name="{{ tabs }}"></a>
+
+<h2>Getting your Captions</h2>
+
+The most important part of the bundle notification is the <code>href</code> of the <code>clarify:insights</code> key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.
+
+{% include /structural/tabs.html %}
+
+This will return with the list of available insights:
+
+{% include /source/json/insights_captions.md %}
+
+{% assign tabs="request-captions" %}
+
+<a name="{{ tabs }}"></a>
+
+The most important part of this payload is the <code>href</code> of the <code>insight:captions_r9</code> key. By retrieving the contents of that URI, Clarify will give you a complete list of the available file formats for your captions.
+
+{% include /structural/tabs.html %}
+
+The resulting payload includes individual links to all of the available closed captioning formats. Here's the full response:
+
+{% include /source/json/captions_r9.md %}
+
+You can now retrieve any of the closed captioning formats you need. In this request, we'll retrieve the SRT or SubRip format:
+
+{% assign tabs="request-captions-file" %}
+
+<a name="{{ tabs }}"></a>
+
+{% include /structural/tabs.html %}
+
+From here, you can load the resulting file into your video player or your favorite media management platform such as <a href="http://support.brightcove.com/en/video-cloud/docs/adding-captioning-support-accessible-video-player">Brightcove</a> or <a href="https://vimeo.com/help/faq/managing-your-videos/captions-and-subtitles#how-do-i-add-caption-and-subtitle-files-to-my-videos">Vimeo</a>. At this point, it's up to you.
