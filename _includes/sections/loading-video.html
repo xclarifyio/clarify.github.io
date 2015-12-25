@@ -1,0 +1,17 @@
+{% assign tabs="loading-video" %}
+
+<a name="{{ tabs }}"></a>
+
+<h2>Loading Video</h2>
+
+<p>First include the SDK and create your object using your API Key. Once you&#8217;ve created the object, you can use the object to load each of your video files as shown:</p>
+
+{% include /structural/tabs.html %}
+
+<p>Naming the bundle and providing a <code>notify_url</code> are both optional. We have a number of video files available for processing on <a href="http://clarify.io/media">our Media Page</a>.</p>
+
+{% include /messages/no-download.html %}
+
+After creating a bundle, you'll receive a response which looks something like this:
+
+{% include /source/json/bundle_callback.md %}
