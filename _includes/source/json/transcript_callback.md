@@ -4,7 +4,7 @@
     "name": "Dorothy and the Wizard of Oz",
     "external_id": "external_123",
     "insight": "transcript_r9",
-    "insight_id": "54321edcba",
+    "insight_id": "56789abcde",
     "updated": "2015-04-30T01:11:19.889Z",
     "_class": "InsightNotification",
     "_links": {
@@ -30,7 +30,7 @@
             "href": "/v1/bundles/abcde12345/tracks"
         },
         "insight:transcript_r9": {
-            "href": "/v1/bundles/abcde12345/insights/54321edcba"
+            "href": "/v1/bundles/abcde12345/insights/56789abcde"
         }
     }
 }

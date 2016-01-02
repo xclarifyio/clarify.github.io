@@ -1,6 +1,6 @@
 {% highlight json %}
 {
-    "id": "98765abcde",
+    "id": "56789abcde",
     "bundle_id": "abcde12345",
     "name": "transcript_r9",
     "status": "ready",
@@ -103,7 +103,7 @@
     "_class": "TranscriptR9Insight",
     "_links": {
         "self": {
-            "href": "/v1/bundles/89612c28760343e5898aa059f7980a7e/insights/11c472b8e6de4275a61509a2f7de134a"
+            "href": "/v1/bundles/abcde12345/insights/56789abcde"
         },
         "curies": [
         {
