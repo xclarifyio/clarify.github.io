@@ -6,7 +6,7 @@ navtitle: Closed Captioning
 languages:
 - curl
 
-order: 6
+order: 7
 status: beta
 ---
 
@@ -26,11 +26,13 @@ This quickstart demonstrates how to load a video file and request clsoed caption
 
 <h2>Getting your Captions</h2>
 
-The most important part of the bundle notification is the <code>href</code> of the <code>clarify:insights</code> key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.
+To retrieve your completed captions, you have two options. First, you can store the <code>href</code> of the <code>self</code> key from your previous request to retrieve the captions list directly. That's the easiest and fastest way.
+
+Alternatively, you can use the <code>href</code> of the <code>clarify:insights</code> key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.
 
 {% include /structural/tabs.html %}
 
-This will return with the list of available insights:
+This gives you a master list of all insights currently available to you. It's worth noting that this list will change over time as we add new insights to the system.
 
 {% include /source/json/insights_captions.md %}
 
@@ -38,7 +40,7 @@ This will return with the list of available insights:
 
 <a name="{{ tabs }}"></a>
 
-The most important part of this payload is the <code>href</code> of the <code>insight:captions_r9</code> key. By retrieving the contents of that URI, Clarify will give you a complete list of the available file formats for your captions.
+In this list, the <code>href</code> of the <code>insight:captions_r9</code> is the important part and the same as the <code>self</code> link noted above. By retrieving the contents of that URI, Clarify will give you a complete list of the available file formats for your captions.
 
 {% include /structural/tabs.html %}
 
