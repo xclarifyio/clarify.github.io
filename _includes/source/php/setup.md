@@ -3,7 +3,7 @@ You can install the Clarify SDK using <a href="https://getcomposer.org/" target=
 {% highlight javascript %}
 {
     "require": {
-        "clarify/clarify-helper": "~1.3"
+        "clarify/clarify-helper": "~2.0.0"
     }
 }
 {% endhighlight %}
