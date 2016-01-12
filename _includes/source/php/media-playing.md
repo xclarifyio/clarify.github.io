@@ -1,9 +1,9 @@
 {% highlight php %}
 <?php
 
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
-$bundle = new Clarify\Bundle($apikey);
+$bundle = new Clarify\Bundle('my api key');
 $items = $bundle->search($terms);
 
 $search_terms = json_encode($items['search_terms']);

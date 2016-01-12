@@ -1,7 +1,7 @@
 {% highlight php %}
 <?php
 
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 $bundle = new Clarify\Bundle('my api key');
 $page = $bundle->search('dorothy');

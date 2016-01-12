@@ -1,4 +1,4 @@
-You can install the Clarify SDK using <a href="https://getcomposer.org/" target="_new">Composer</a>:
+You can install the Clarify SDK using <a href="https://getcomposer.org/" target="_new">Composer</a>. In composer.json add:
 
 {% highlight javascript %}
 {
