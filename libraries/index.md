@@ -9,7 +9,7 @@ title: Libraries and SDKs
 
 Use one of our helper libraries to use Clarify in your language of choice:
 
-* [clarify-php](https://github.com/Clarify/clarify-php) &mdash; Requires PHP 5.3+, installed via Composer
+* [clarify-php](https://github.com/Clarify/clarify-php) &mdash; Requires PHP 5.5+, installed via Composer
 * [clarify-python 2](https://github.com/Clarify/clarify_python_2) &mdash; Requires Python 2.x, installed via Pip
 * [clarify-python 3](https://github.com/Clarify/clarify_python) &mdash; Requires Python 3.x, installed via Pip
 * [clarify-java](https://github.com/Clarify/clarify-java) &mdash; Requires Java 1.6+, installed via Maven
