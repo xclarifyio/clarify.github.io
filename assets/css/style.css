@@ -209,7 +209,6 @@
 .menu-item {
     top: 0;
     left: 0;
-    height: 20px;
     background-repeat: no-repeat!important;
     text-align: center;
     padding-top: 10px;
@@ -1573,6 +1572,7 @@ aside ul, ul.sub-menu {
     list-style-type: none;
     margin: 0;
     padding: 0 0 0 12px;
+    position: relative;
 }
 
 aside.widget_recent_entries ul {

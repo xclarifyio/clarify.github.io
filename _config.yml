@@ -7,3 +7,5 @@ exclude: [Gemfile, Gemfile.lock, README.md]
 collections:
   quickstarts:
     output: true
+  insights:
+    output: true
