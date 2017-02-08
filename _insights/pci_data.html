@@ -1,0 +1,26 @@
+---
+layout: quickstart
+title: PCI Data
+navtitle: PCI Data
+
+status: invite
+
+languages:
+- curl
+
+order: 10
+---
+
+The PCI Data insight contains track-level data.
+<code>track_data</code> is an array containing an object for each track. Each object contains the <code>track_id</code> and <code>track_label</code> of the track, as well as the following:
+
+<ul>
+<li><code>pci_data</code> - Sections of audio that contain credit card numbers, security codes, and any number associated with an expiry date. It is an array that contains objects with <code>start</code> and <code>end</code> times in seconds.
+</ul>
+
+<h2>Sample Response</h2>
+
+An example <code>insight:pci_data</code> response:
+
+{% include /source/json/insights_pci_data.md %}
+

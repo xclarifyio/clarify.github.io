@@ -211,7 +211,7 @@
     left: 0;
     background-repeat: no-repeat!important;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 6px;
     padding-left: 0;
     padding-bottom: 0;
     padding-right: 0;
@@ -242,9 +242,8 @@
 .menu-item:hover {
     top: 0;
     left: 0;
-    Height: 20px;
     background-repeat: no-repeat!important;
-    padding-top: 10px;
+    padding-top: 6px;
     padding-left: 0;
     padding-bottom: 0;
     padding-right: 0;
@@ -1545,6 +1544,11 @@ article>h1, article h3 {
 ul#menu-documentation-sidebar * a {
     color: black;
     white-space: nowrap;
+    padding: 4px 6px;
+}
+
+ul#menu-documentation-sidebar * a:hover {
+    background-color: #f0f0f0;
 }
 
 article img {

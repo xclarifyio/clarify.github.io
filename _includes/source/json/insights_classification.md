@@ -3,39 +3,22 @@
     "bundle_id": "abcde12345",
     "created": "2015-05-16T20:39:37.507Z",
     "id": "54321edcba",
-    "name": "spoken_keywords",
+    "name": "classification",
     "status": "ready",
     "track_data": [
         {
             "track_id": "fff111",
             "track_label": "",
-            "keywords": [
-                {
-                    "count": 11,
-                    "term": "horse",
-                    "weight": 0.917
-                }, {
-                    "count": 9,
-                    "term": "uncle",
-                    "weight": 0.75
-                }, {
-                    "count": 7,
-                    "term": "dorothy",
-                    "weight": 0.583
-                }, {
-                    "count": 5,
-                    "term": "little",
-                    "weight": 0.417
-                }, {
-                    "count": 4,
-                    "term": "train",
-                    "weight": 0.333
-                }
+            "spoken_languages": [
+	        "en-US"
+            ],
+            "acoustics": [
+	        "telephone"
             ]
         }
     ],
     "updated": "2015-05-16T20:39:37.508Z",
-    "_class": "SpokenKeywordsInsight",
+    "_class": "ClassificationInsight",
     "_links": {
         "clarify:bundle": {
             "href": "/v1/bundles/abcde12345"
