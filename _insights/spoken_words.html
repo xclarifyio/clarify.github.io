@@ -1,0 +1,48 @@
+---
+layout: quickstart
+title: Spoken Words
+navtitle: Spoken Words
+
+languages:
+- curl
+
+order: 2
+---
+
+The Spoken Words insight contains bundle-level and track-level data:
+<br/>
+<br/>
+<h3>Bundle-level Data</h3>
+
+<code>data</code> is an object containing:
+
+<ul>
+<li><code>word_count</code> - Total number of words spoken
+<li><code>words_per_minute</code> - Average number of words spoken per minute of speaking time
+<li><code>spoken_duration</code> - Number of seconds where at least one person is speaking on any track
+<li><code>spoken_duration_percent</code> - Percent of total time where at least one person is speaking on any track
+<li><code>crosstalk_duration</code> - Number of seconds where more than one track is speaking
+<li><code>crosstalk_percent</code> - Percent of the <b>speaking time</b> that has more than one track speaking. This is likely more useful data than <code>crosstalk_duration_percent</code>.
+<li><code>crosstalk_duration_percent</code> - Percent of the track duration that has more than one track speaking. This is analoguous to <code>spoken_duration_percent</code>.
+<li><code>crosstalk_segments</code> - Array of segment objects where more than one track is speaking. Each object in the array contains <code>start</code> and </code>end</code> times in seconds.
+</ul>
+
+<h3>Track-level Data</h3>
+
+<code>track_data</code> is an array containing an object for each track. Each object contains the <code>track_id</code> and <code>track_label</code> of the track, as well as the following:
+
+<ul>
+<li><code>word_count</code> - Total number of words spoken in the track
+<li><code>words_per_minute</code> - Average number of words spoken per minute of speaking time in the track
+<li><code>spoken_duration</code> - Number of seconds where someone is speaking in the track
+<li><code>spoken_duration_percent</code> - Percent of total time where someone is speaking inn the track
+<li><code>speech_segments</code> - Array of segment objects corresponding to each block of continuous speech. Each object in the array contains <code>start</code> and <code>end</code> times in seconds as well as <code>word_count</code> and <code>words_per_minute</code>.
+<li><code>interrupts</code> - Array of segment objects where this track interrupts another track that is already speaking. Each object in the array contains <code>start</code> and </code>end</code> times in seconds.
+`</ul>
+
+<h2>Sample Response</h2>
+
+An example <code>insight:spoken_words</code> response:
+
+{% include /source/json/insights_spoken_words.md %}
+

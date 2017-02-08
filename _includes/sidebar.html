@@ -9,6 +9,14 @@
                 <li class="menu-item"><a href="/media/">Sample Media</a></li>
                 <li class="menu-item"><a href="/faq/">Frequently Asked Questions</a></li>
                 <li class="menu-item"><a href="/errors/">Error Codes</a></li>
+                <li class="menu-item"><a href="#">Insights</a>
+                    <ul class="sub-menu">
+                        {% assign items = site.insights | sort: 'order' %}
+                        {% for item in items %}
+                        <li class="menu-item"><a href="{{ item.url }}">{{ item.navtitle }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
                 <li class="menu-item"><a href="/quickstarts/">Quickstarts</a>
                     <ul class="sub-menu">
                         {% assign items = site.quickstarts | sort: 'order' %}

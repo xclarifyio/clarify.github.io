@@ -1,0 +1,34 @@
+---
+layout: quickstart
+title: Spoken Topics
+navtitle: Spoken Topics
+
+languages:
+- curl
+
+order: 5
+---
+
+The Spoken Topics insight contains track-level data.
+<code>track_data</code> is an array containing an object for each track. Each object contains the <code>track_id</code> and <code>track_label</code> of the track, as well as the following:
+
+<br/>
+<br/>
+<h3>topics</h3>
+
+Topics are the subjects spoken about in the audio.
+<br/>
+<br/>
+The <code>topics</code> array contains objects with:
+
+<ul>
+<li><code>categories</code> - Subjects that describe the topic. A category is represented by an array of <code>path</code> arrays which contain objects, each with the <code>name</code> of a subject, from most general to most specific.
+<li><code>terms</code> - Array of terms where each is a word related to the topic. Each term is an object with a <code>term</code> property.
+</ul>
+
+<h2>Sample Response</h2>
+
+An example <code>insight:spoken_topics</code> response:
+
+{% include /source/json/insights_topics.md %}
+

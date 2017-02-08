@@ -1,0 +1,61 @@
+---
+layout: quickstart
+title: Spoken Keywords
+navtitle: Spoken Keywords
+
+languages:
+- curl
+
+order: 3
+---
+
+The Spoken Keywords insight contains track-level data.
+<code>track_data</code> is an array containing an object for each track. Each object contains the <code>track_id</code> and <code>track_label</code> of the track, as well as the following:
+
+<br/>
+<br/>
+<h3>keywords</h3>
+
+Keywords are important terms spoken in the audio.
+<br/>
+<br/>
+The <code>keywords</code> list contains objects with:
+
+<ul>
+<li><code>term</code> - the word
+<li><code>weight</code> - a score which signifies the term's relevance
+<li><code>count</code> - the number of times which the term was spoken
+</ul>
+
+<h3>entities (invite only)</h3>
+
+Named entities are proper nouns or other entities spoken in the audio. These include people's names, place names, organization names, dates, currency amounts etc.
+<br/>
+<br/>
+The <code>entities</code> list contains objects with:
+
+<ul>
+<li><code>term</code> - the entity
+<li><code>weight</code> - a score which signifies the term's relevance
+<li><code>type</code> - the type of entity
+</ul>
+
+The possible <code>type</code> values are:
+
+<ul>
+<li><code>person</code> - a person's name. This may be full name or just first or last name
+<li><code>location</code> - a geographical location such as country, state, city, etc.
+<li><code>product</code> - a product or brand name
+<li><code>organization</code> - any type of organization or group
+<li><code>date</code> - a full date or partial date such as a month, a year, a day of the week etc.
+<li><code>money</code> - a monetary value spoken in the audio, for example "100 dollars"
+<li><code>percent</code> - a percentage value spoken in the audio
+</ul>
+
+
+<h2>Sample Response</h2>
+
+An example <code>insight:spoken_keywords</code> response:
+
+{% include /source/json/insights_keywords.md %}
+
