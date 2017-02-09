@@ -13,7 +13,7 @@ The Classification insight contains track-level data.
 <code>track_data</code> is an array containing an object for each track. Each object contains the <code>track_id</code> and <code>track_label</code> of the track, as well as the following:
 
 <ul>
-<li><code>spoken_languages</code> - Array of strings containing ISO-8601 language codes for the language detected in the audio. For example, "en-US". Currently only the most predominant language is listed.
+<li><code>spoken_languages</code> - Array of strings containing <a href="http://tools.ietf.org/html/rfc5646">RFC 5646</a> language codes for the language detected in the audio. For example, "en-US". Currently only the most predominant language is listed.
 <li><code>acoustics</code> - Array of strings describing the acoustic environment. If a standard wide-band environment is detected, the array will be empty. Currently supported environments are: <code>"telephone"</code>.
 </ul>
 
