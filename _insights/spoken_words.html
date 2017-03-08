@@ -38,7 +38,10 @@ The Spoken Words insight contains bundle-level and track-level data:
 <li><code>spoken_duration_percent</code> - Percent of total time where someone is speaking inn the track
 <li><code>speech_segments</code> - Array of segment objects corresponding to each block of continuous speech. Each object in the array contains <code>start</code> and <code>end</code> times in seconds as well as <code>word_count</code> and <code>words_per_minute</code>.
 <li><code>interrupts</code> - Array of segment objects where this track interrupts another track that is already speaking. Each object in the array contains <code>start</code> and </code>end</code> times in seconds.
-`</ul>
+<li><code>interrupt_count</code> - Number of interrupt segments in <code>interrupts</code>.
+<li><code>interrupt_duration</code> - Total duration in seconds of the interrupt segments in <code>interrupts</code>
+<li><code>interrupt_percent</code> - Percent of the total bundle spoken duration that this track interrrupts.
+</ul>
 
 <h2>Sample Response</h2>
 
