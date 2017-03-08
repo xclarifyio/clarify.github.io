@@ -225,6 +225,9 @@
           "word_count": 3
         }
       ],
+      "interrupt_count": 9,
+      "interrupt_duration": 11.39,
+      "interrupt_percent: 4.02,
       "interrupts": [
         {
           "end": 106.02,
@@ -357,6 +360,9 @@
           "word_count": 9
         }
       ],
+      "interrupt_count": 3,
+      "interrupt_duration": 4.78,
+      "interrupt_percent: 1.69,
       "interrupts": [
         {
           "end": 215.46,
