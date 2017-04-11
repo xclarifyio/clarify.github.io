@@ -1,0 +1,67 @@
+---
+layout: quickstart
+title: Getting Automatic Captions
+navtitle: Automatic Captions
+
+languages:
+- curl
+
+status: invite
+
+order: 6
+---
+
+This quickstart demonstrates how to load an audio file and request captions in just a matter of minutes.
+
+{% include /sections/setup.html %}
+
+{% include /sections/loading-audio.html %}
+
+<h2>Requesting Captions</h2>
+
+Normally, your app will be configured to automatically run captions so you can skip right to the Getting your Captions section. If not, you can request captions to be run for an existing bundle with the following:
+
+{% include /structural/tabs.html %}
+
+{% assign tabs="run-captions_r4" %}
+
+<a name="{{ tabs }}"></a>
+
+The captions may take a minute or two to generate.
+
+
+<h2>Getting your Captions</h2>
+
+From a bundle, you can use the <code>href</code> of the <code>clarify:insights</code> key. By retrieving the contents of that URI, Clarify will give you a list of the Insights available.
+
+{% assign tabs="request-insights" %}
+
+<a name="{{ tabs }}"></a>
+
+This gives you a master list of all insights currently available to you for that bundle. It's worth noting that this list will change over time as we add new insights to the system.
+
+{% include /source/json/insights_captions_r4.md %}
+
+{% assign tabs="request-captions" %}
+
+<a name="{{ tabs }}"></a>
+
+In this list, the <code>href</code> of the <code>insight:captions_r4</code> is the important part. By retrieving the contents of that URI, Clarify will give you a complete list of the available file formats for your captions.
+
+{% include /structural/tabs.html %}
+
+The resulting payload includes individual links to all of the available closed captioning formats. Here's the full response:
+
+{% include /source/json/captions_r4.md %}
+
+You can now retrieve any of the closed captioning formats you need. In this request, we'll retrieve the SRT or SubRip format:
+
+{% assign tabs="request-captions-file" %}
+
+<a name="{{ tabs }}"></a>
+
+{% include /structural/tabs.html %}
+
+When making the captions file request, make sure to follow any redirects.
+
+From here, you can load the resulting file into your video player or your favorite media management platform such as <a href="http://support.brightcove.com/en/video-cloud/docs/adding-captioning-support-accessible-video-player">Brightcove</a> or <a href="https://vimeo.com/help/faq/managing-your-videos/captions-and-subtitles#how-do-i-add-caption-and-subtitle-files-to-my-videos">Vimeo</a>. At this point, it's up to you.
